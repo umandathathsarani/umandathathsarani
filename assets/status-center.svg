@@ -1,95 +1,112 @@
-<svg width="1200" height="460" viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050510"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </linearGradient>
 
-<defs>
+    <linearGradient id="gpu-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7B68EE"/>
+      <stop offset="100%" stop-color="#00FFFF"/>
+    </linearGradient>
 
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#0D1117"/>
-<stop offset="100%" stop-color="#161B22"/>
-</linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-<linearGradient id="title">
-<stop offset="0%" stop-color="#7B68EE"/>
-<stop offset="100%" stop-color="#00FFFF"/>
-</linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#7B68EE" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
 
-</defs>
+  <style>
+    @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+    @keyframes dataFlow { to { stroke-dashoffset: -20; } }
+    @keyframes barFill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    
+    .status-pulse { animation: pulse 2s infinite; }
+    .data-line { stroke-dasharray: 4 4; animation: dataFlow 1s linear infinite; }
+    
+    .panel { fill: rgba(20, 20, 40, 0.5); stroke: rgba(123, 104, 238, 0.3); stroke-width: 1; rx: 8; }
+    .title { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: bold; fill: #FFFFFF; }
+    .value { font-family: 'Fira Code', monospace; font-size: 20px; font-weight: bold; fill: #00FFFF; }
+    .subtext { font-family: 'Inter', sans-serif; font-size: 11px; fill: #8be9fd; }
+    
+    .bar-bg { fill: rgba(0, 0, 0, 0.5); rx: 3; }
+    .bar-fg { transform-origin: left center; animation: barFill 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; rx: 3; }
+  </style>
 
-<rect width="1200" height="460" rx="18" fill="url(#bg)" stroke="#30363D"/>
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
 
-<text
-x="40"
-y="55"
-font-size="34"
-font-family="Segoe UI"
-font-weight="bold"
-fill="url(#title)">
+  <!-- Main HUD Layout -->
+  
+  <!-- Block 1: AI Core Status -->
+  <g transform="translate(50, 40)">
+    <rect x="0" y="0" width="250" height="100" class="panel"/>
+    <circle cx="25" cy="25" r="5" fill="#00FF87" class="status-pulse" filter="url(#glow)"/>
+    <text x="40" y="30" class="title">AI CORE STATUS</text>
+    <text x="25" y="65" class="value">ONLINE_</text>
+    <text x="25" y="85" class="subtext">Uptime: 42d 16h 04m</text>
+  </g>
 
-🛰 AI STATUS CENTER
+  <!-- Block 2: CPU & Memory -->
+  <g transform="translate(320, 40)">
+    <rect x="0" y="0" width="250" height="100" class="panel"/>
+    <text x="25" y="30" class="title">COMPUTE RESOURCES</text>
+    
+    <text x="25" y="60" class="subtext">CPU</text>
+    <rect x="60" y="52" width="130" height="8" class="bar-bg"/>
+    <rect x="60" y="52" width="104" height="8" fill="#7B68EE" class="bar-fg" filter="url(#glow)"/>
+    <text x="200" y="60" class="subtext">80%</text>
 
-</text>
+    <text x="25" y="80" class="subtext">RAM</text>
+    <rect x="60" y="72" width="130" height="8" class="bar-bg"/>
+    <rect x="60" y="72" width="85" height="8" fill="#00FFFF" class="bar-fg" filter="url(#glow)"/>
+    <text x="200" y="80" class="subtext">65%</text>
+  </g>
 
-<line
-x1="40"
-y1="75"
-x2="1160"
-y2="75"
-stroke="#30363D"/>
+  <!-- Block 3: GPU Usage -->
+  <g transform="translate(590, 40)">
+    <rect x="0" y="0" width="250" height="100" class="panel"/>
+    <text x="25" y="30" class="title">GPU CLUSTER (CUDA)</text>
+    <text x="25" y="70" class="value" fill="#ffb86c">98.5%</text>
+    <text x="120" y="70" class="subtext" fill="#ffb86c">TRAINING</text>
+    <rect x="25" y="85" width="200" height="4" fill="url(#gpu-grad)" class="bar-fg"/>
+  </g>
 
-<!-- LEFT -->
+  <!-- Block 4: Cloud Integration -->
+  <g transform="translate(860, 40)">
+    <rect x="0" y="0" width="290" height="100" class="panel"/>
+    <text x="25" y="30" class="title">CLOUD DEPLOYMENT</text>
+    <circle cx="25" cy="55" r="4" fill="#00FF87"/>
+    <text x="40" y="59" class="subtext">AWS Infrastructure: SECURE</text>
+    <circle cx="25" cy="75" r="4" fill="#00FF87"/>
+    <text x="40" y="79" class="subtext">GCP Databases: SYNCED</text>
+  </g>
 
-<text x="70" y="130" fill="#00FF88" font-size="22">🟢 SYSTEM STATUS</text>
-<text x="350" y="130" fill="white" font-size="22">ONLINE</text>
+  <!-- Bottom Block: Current Mission -->
+  <g transform="translate(50, 160)">
+    <rect x="0" y="0" width="1100" height="100" class="panel"/>
+    
+    <!-- Connection lines -->
+    <path d="M 175 100 L 175 160" stroke="#00FFFF" stroke-width="1.5" class="data-line"/>
+    <path d="M 445 100 L 445 160" stroke="#00FFFF" stroke-width="1.5" class="data-line"/>
+    <path d="M 715 100 L 715 160" stroke="#00FFFF" stroke-width="1.5" class="data-line"/>
+    <path d="M 1005 100 L 1005 160" stroke="#00FFFF" stroke-width="1.5" class="data-line"/>
 
-<text x="70" y="175" fill="#00FF88" font-size="22">🤖 AI CORE</text>
-<text x="350" y="175" fill="white" font-size="22">ACTIVE</text>
-
-<text x="70" y="220" fill="#00FF88" font-size="22">🚀 CURRENT PROJECT</text>
-<text x="350" y="220" fill="white" font-size="22">Exoplanet Explorer</text>
-
-<text x="70" y="265" fill="#00FF88" font-size="22">🎯 FOCUS</text>
-<text x="350" y="265" fill="white" font-size="22">Artificial Intelligence</text>
-
-<text x="70" y="310" fill="#00FF88" font-size="22">🌍 LOCATION</text>
-<text x="350" y="310" fill="white" font-size="22">Sri Lanka</text>
-
-<!-- RIGHT -->
-
-<text x="650" y="130" fill="#00FFFF" font-size="22">📚 LEARNING</text>
-<text x="930" y="130" fill="white" font-size="22">PyTorch</text>
-
-<text x="650" y="175" fill="#00FFFF" font-size="22">☁ CLOUD</text>
-<text x="930" y="175" fill="white" font-size="22">Docker</text>
-
-<text x="650" y="220" fill="#00FFFF" font-size="22">🧠 NEXT GOAL</text>
-<text x="930" y="220" fill="white" font-size="22">LLMs</text>
-
-<text x="650" y="265" fill="#00FFFF" font-size="22">💼 OPEN TO</text>
-<text x="930" y="265" fill="white" font-size="22">Internships</text>
-
-<text x="650" y="310" fill="#00FFFF" font-size="22">⚡ UPTIME</text>
-<text x="930" y="310" fill="#00FF88" font-size="22">99.9%</text>
-
-<!-- Bottom -->
-
-<rect
-x="70"
-y="360"
-width="1060"
-height="55"
-rx="12"
-fill="#10161F"
-stroke="#30363D"/>
-
-<text
-x="600"
-y="395"
-text-anchor="middle"
-fill="#7B68EE"
-font-size="20"
-font-family="Consolas">
-
-Building Intelligent Systems • Learning Every Day • Creating Impact
-
-</text>
-
+    <text x="30" y="35" class="title" fill="#7B68EE">CURRENT DIRECTIVE</text>
+    <text x="30" y="70" class="value" fill="#FFFFFF">Mastering Advanced Deep Learning Architectures &amp; Web3 Integrations</text>
+    
+    <g transform="translate(800, 35)">
+      <text x="0" y="0" class="subtext">MISSION PROGRESS</text>
+      <rect x="0" y="15" width="250" height="12" class="bar-bg"/>
+      <rect x="0" y="15" width="200" height="12" fill="#00FF87" class="bar-fg" filter="url(#glow)"/>
+      <text x="260" y="25" class="value" font-size="16">80%</text>
+    </g>
+  </g>
 </svg>

@@ -1,33 +1,90 @@
-<svg width="560" height="220" viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14142b"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    <linearGradient id="card-hover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e40"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    
+    <linearGradient id="badge-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff79c6"/>
+      <stop offset="100%" stop-color="#bd93f9"/>
+    </linearGradient>
 
-<rect width="560" height="220" rx="18" fill="#0D1117" stroke="#30363D"/>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-<text x="25" y="50" font-size="30">📚</text>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
 
-<text x="70" y="50" font-size="24" fill="#00BFFF" font-weight="bold">
+  <style>
+    .card { transition: all 0.3s ease; transform-origin: center; cursor: pointer; }
+    .card:hover { transform: scale(1.02); filter: drop-shadow(0 10px 15px rgba(255, 121, 198, 0.2)); }
+    .card:hover .card-bg-rect { fill: url(#card-hover); stroke: #ff79c6; }
+    
+    .title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; fill: #FFFFFF; }
+    .desc { font-family: 'Inter', sans-serif; font-size: 12px; fill: #a5b4fc; }
+    .feature { font-family: 'Inter', sans-serif; font-size: 11px; fill: #8be9fd; }
+    .badge-text { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: bold; fill: #FFFFFF; }
+    .btn-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: bold; fill: #14142b; }
+    .btn-outline-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: bold; fill: #FFFFFF; }
+  </style>
 
-Interactive Fiction
+  <g class="card">
+    <rect x="5" y="5" width="390" height="240" rx="12" fill="url(#card-bg)" stroke="#bd93f9" stroke-width="1.5" class="card-bg-rect" filter="url(#shadow)"/>
+    
+    <!-- Thumbnail Area -->
+    <rect x="5" y="5" width="390" height="70" rx="12" fill="rgba(189, 147, 249, 0.15)" style="border-bottom-left-radius:0; border-bottom-right-radius:0;"/>
+    
+    <!-- Icon representing a book / fiction -->
+    <path d="M 35 45 L 35 25 Q 50 20 65 25 L 65 45 Q 50 40 35 45 Z" fill="url(#badge-bg)" filter="url(#glow)"/>
+    <path d="M 65 45 L 65 25 Q 80 20 95 25 L 95 45 Q 80 40 65 45 Z" fill="url(#badge-bg)" filter="url(#glow)"/>
 
-</text>
+    <!-- Badges -->
+    <g transform="translate(290, 15)">
+      <rect x="0" y="0" width="90" height="20" rx="10" fill="rgba(255, 184, 108, 0.2)" stroke="#ffb86c" stroke-width="1"/>
+      <circle cx="10" cy="10" r="3" fill="#ffb86c"/>
+      <text x="20" y="14" class="badge-text" fill="#ffb86c">BUILDING</text>
+    </g>
 
-<text x="25" y="95" fill="white">
+    <!-- Content -->
+    <text x="20" y="100" class="title">AI Story Generator</text>
+    <text x="20" y="125" class="desc">LLM-powered tool to generate interactive</text>
+    <text x="20" y="140" class="desc">fiction and multi-branch narratives.</text>
 
-AI Storytelling Platform
+    <!-- Tech Stack -->
+    <g transform="translate(20, 160)">
+      <rect x="0" y="0" width="90" height="20" rx="4" fill="rgba(189, 147, 249, 0.2)"/>
+      <text x="45" y="14" class="badge-text" text-anchor="middle">Transformers</text>
+      
+      <rect x="100" y="0" width="70" height="20" rx="4" fill="rgba(0, 255, 255, 0.2)"/>
+      <text x="135" y="14" class="badge-text" text-anchor="middle">React.js</text>
 
-</text>
+      <rect x="180" y="0" width="60" height="20" rx="4" fill="rgba(255, 121, 198, 0.2)"/>
+      <text x="210" y="14" class="badge-text" text-anchor="middle">OpenAI</text>
+    </g>
 
-<text x="25" y="125" fill="#8B949E">
+    <!-- Key Feature -->
+    <circle cx="25" cy="205" r="3" fill="#8be9fd"/>
+    <text x="35" y="209" class="feature">Context-aware branching logic</text>
 
-Gemini API • Flask • MongoDB
+    <!-- Buttons -->
+    <g transform="translate(220, 200)">
+      <rect x="0" y="0" width="75" height="26" rx="4" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.3)"/>
+      <text x="37.5" y="17" class="btn-outline-text" text-anchor="middle">GitHub</text>
 
-</text>
-
-<rect x="25" y="160" width="120" height="35" rx="18" fill="#238636"/>
-
-<text x="53" y="183" fill="white">
-
-STABLE
-
-</text>
-
+      <rect x="85" y="0" width="75" height="26" rx="4" fill="url(#badge-bg)"/>
+      <text x="122.5" y="17" class="btn-text" text-anchor="middle">Demo ↗</text>
+    </g>
+  </g>
 </svg>

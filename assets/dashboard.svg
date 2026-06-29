@@ -1,161 +1,212 @@
-<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050510"/>
+      <stop offset="50%" stop-color="#0a0a20"/>
+      <stop offset="100%" stop-color="#020205"/>
+    </linearGradient>
 
-<defs>
+    <!-- UI Elements Gradients -->
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7B68EE"/>
+      <stop offset="100%" stop-color="#00FFFF"/>
+    </linearGradient>
 
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#0D1117"/>
-<stop offset="100%" stop-color="#161B22"/>
-</linearGradient>
+    <linearGradient id="success" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF87"/>
+      <stop offset="100%" stop-color="#60EFFF"/>
+    </linearGradient>
 
-<linearGradient id="title" x1="0%" y1="0%" x2="100%">
-<stop offset="0%" stop-color="#7B68EE"/>
-<stop offset="100%" stop-color="#00FFFF"/>
-</linearGradient>
+    <linearGradient id="warning" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF512F"/>
+      <stop offset="100%" stop-color="#F09819"/>
+    </linearGradient>
 
-<filter id="glow">
-<feGaussianBlur stdDeviation="3"/>
-</filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
 
-</defs>
+    <filter id="glass">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"/>
+      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+    </filter>
 
-<!-- Background -->
+    <pattern id="dot-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#7B68EE" opacity="0.15"/>
+    </pattern>
+  </defs>
 
-<rect
-x="0"
-y="0"
-width="1200"
-height="500"
-rx="20"
-fill="url(#bg)"
-stroke="#30363D"/>
+  <style>
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    @keyframes pulse { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; filter: drop-shadow(0 0 8px #00FFFF); } }
+    @keyframes progress { 0% { stroke-dashoffset: 100; } 100% { stroke-dashoffset: 0; } }
+    @keyframes slideRight { 0% { width: 0; } 100% { width: var(--target-width); } }
+    
+    .spinner { transform-origin: center; animation: spin 8s linear infinite; }
+    .spinner-reverse { transform-origin: center; animation: spin 12s linear infinite reverse; }
+    .status-dot { animation: pulse 2s infinite; }
+    .bar-fill { animation: slideRight 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+    
+    .panel { fill: rgba(20, 20, 40, 0.6); stroke: rgba(123, 104, 238, 0.3); stroke-width: 1; rx: 12; }
+    .panel-header { fill: rgba(123, 104, 238, 0.1); rx: 12; }
+    
+    .text-title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; fill: #FFFFFF; }
+    .text-sub { font-family: 'Inter', sans-serif; font-size: 14px; fill: #8be9fd; }
+    .text-body { font-family: 'Inter', sans-serif; font-size: 13px; fill: #a5b4fc; }
+    .text-value { font-family: 'Fira Code', monospace; font-size: 16px; fill: #00FFFF; }
+    .text-mono { font-family: 'Fira Code', monospace; font-size: 12px; fill: #7B68EE; }
+  </style>
 
-<!-- Title -->
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect width="1200" height="600" fill="url(#dot-grid)"/>
 
-<text
-x="40"
-y="50"
-font-size="32"
-font-family="Segoe UI"
-font-weight="bold"
-fill="url(#title)">
+  <!-- TITLE -->
+  <text x="50" y="50" font-family="'Fira Code', monospace" font-size="24" fill="#FFFFFF" filter="url(#glow)">[ AI_COMMAND_CENTER_V2.0 ]</text>
+  <line x1="50" y1="65" x2="1150" y2="65" stroke="url(#primary)" stroke-width="2" filter="url(#glow)"/>
 
-🤖 AI OPERATING SYSTEM
+  <!-- COLUMN 1: AI Core & Status (X: 50, Width: 350) -->
+  <g transform="translate(50, 90)">
+    <!-- Panel Background -->
+    <rect x="0" y="0" width="350" height="480" class="panel"/>
+    <rect x="0" y="0" width="350" height="40" class="panel-header" style="border-bottom-left-radius:0; border-bottom-right-radius:0;"/>
+    <text x="20" y="26" class="text-title">SYSTEM STATUS</text>
+    
+    <!-- Core Visualizer -->
+    <g transform="translate(175, 130)">
+      <circle cx="0" cy="0" r="60" fill="none" stroke="#222244" stroke-width="4"/>
+      <circle cx="0" cy="0" r="60" fill="none" stroke="url(#success)" stroke-width="4" stroke-dasharray="300" stroke-dashoffset="60" class="spinner"/>
+      <circle cx="0" cy="0" r="45" fill="none" stroke="url(#primary)" stroke-width="2" stroke-dasharray="20 10" class="spinner-reverse"/>
+      <circle cx="0" cy="0" r="30" fill="rgba(0, 255, 255, 0.1)" stroke="#00FFFF" stroke-width="1" class="status-dot"/>
+      <text x="0" y="6" font-family="'Fira Code', monospace" font-size="18" fill="#FFFFFF" text-anchor="middle" font-weight="bold">98%</text>
+    </g>
 
-</text>
+    <text x="175" y="225" class="text-sub" text-anchor="middle">AI CORE EFFICIENCY</text>
 
-<line
-x1="40"
-y1="70"
-x2="1160"
-y2="70"
-stroke="#30363D"
-stroke-width="2"/>
+    <!-- Metrics List -->
+    <g transform="translate(30, 260)">
+      <circle cx="0" cy="-4" r="4" fill="#00FF87" class="status-dot"/>
+      <text x="15" y="0" class="text-body">Neural Engine</text>
+      <text x="280" y="0" class="text-value" text-anchor="end">ONLINE</text>
 
-<!-- Left Panel -->
+      <circle cx="0" cy="26" r="4" fill="#00FF87" class="status-dot"/>
+      <text x="15" y="30" class="text-body">Vision Modules</text>
+      <text x="280" y="30" class="text-value" text-anchor="end">SYNCED</text>
 
-<rect
-x="40"
-y="100"
-width="350"
-height="330"
-rx="15"
-fill="#0D1117"
-stroke="#30363D"/>
+      <circle cx="0" cy="56" r="4" fill="#00FFFF" class="status-dot"/>
+      <text x="15" y="60" class="text-body">Data Pipelines</text>
+      <text x="280" y="60" class="text-value" text-anchor="end">ACTIVE</text>
 
-<text x="60" y="135" fill="#7B68EE" font-size="22" font-weight="bold">
+      <circle cx="0" cy="86" r="4" fill="#FF512F"/>
+      <text x="15" y="90" class="text-body">Coffee Level</text>
+      <text x="280" y="90" class="text-value" text-anchor="end" fill="#FF512F">CRITICAL</text>
+    </g>
 
-SYSTEM
+    <!-- Quick Info -->
+    <rect x="20" y="380" width="310" height="80" fill="rgba(0, 255, 255, 0.05)" rx="8" stroke="rgba(0, 255, 255, 0.2)"/>
+    <text x="35" y="410" class="text-sub">Current Objective:</text>
+    <text x="35" y="435" class="text-body">Training multimodal transformer</text>
+  </g>
 
-</text>
+  <!-- COLUMN 2: Recruiter Summary & Active Mission (X: 425, Width: 350) -->
+  <g transform="translate(425, 90)">
+    <rect x="0" y="0" width="350" height="230" class="panel"/>
+    <rect x="0" y="0" width="350" height="40" class="panel-header" style="border-bottom-left-radius:0; border-bottom-right-radius:0;"/>
+    <text x="20" y="26" class="text-title">PROFILE SUMMARY</text>
+    
+    <text x="20" y="70" class="text-body">Role: AI Engineer / ML Researcher</text>
+    <text x="20" y="95" class="text-body">Location: Sri Lanka (Open to remote)</text>
+    <text x="20" y="120" class="text-body">Experience: 3+ Years in AI/ML</text>
+    <text x="20" y="145" class="text-body">Availability: Open to Internships</text>
 
-<text x="60" y="175" fill="white" font-size="18">
+    <!-- Badges -->
+    <g transform="translate(20, 175)">
+      <rect x="0" y="0" width="90" height="24" rx="4" fill="rgba(123, 104, 238, 0.2)" stroke="#7B68EE"/>
+      <text x="45" y="16" class="text-mono" text-anchor="middle">Hire_Me</text>
+      
+      <rect x="100" y="0" width="100" height="24" rx="4" fill="rgba(0, 255, 255, 0.2)" stroke="#00FFFF"/>
+      <text x="150" y="16" class="text-mono" text-anchor="middle">Let's_Talk</text>
+    </g>
 
-👩‍💻 User : Umanda Thathsarani
+    <rect x="0" y="250" width="350" height="230" class="panel"/>
+    <rect x="0" y="250" width="350" height="40" class="panel-header" style="border-bottom-left-radius:0; border-bottom-right-radius:0;"/>
+    <text x="20" y="276" class="text-title">LEARNING ROADMAP</text>
 
-</text>
+    <g transform="translate(30, 320)">
+      <circle cx="0" cy="0" r="5" fill="#00FF87"/>
+      <line x1="0" y1="5" x2="0" y2="40" stroke="rgba(123, 104, 238, 0.5)" stroke-width="2"/>
+      <text x="20" y="4" class="text-body">Advanced Deep Learning</text>
 
-<text x="60" y="210" fill="white" font-size="18">
+      <circle cx="0" cy="45" r="5" fill="#00FF87"/>
+      <line x1="0" y1="50" x2="0" y2="85" stroke="rgba(123, 104, 238, 0.5)" stroke-width="2"/>
+      <text x="20" y="49" class="text-body">MLOps &amp; Deployment</text>
 
-🎓 Degree : BSc Information Technology
+      <circle cx="0" cy="90" r="5" fill="#00FFFF" class="status-dot"/>
+      <line x1="0" y1="95" x2="0" y2="130" stroke="rgba(123, 104, 238, 0.2)" stroke-width="2"/>
+      <text x="20" y="94" class="text-body" fill="#00FFFF">Generative AI Models (Active)</text>
 
-</text>
+      <circle cx="0" cy="135" r="5" fill="none" stroke="#7B68EE" stroke-width="2"/>
+      <text x="20" y="139" class="text-body" fill="rgba(165, 180, 252, 0.5)">Reinforcement Learning</text>
+    </g>
+  </g>
 
-<text x="60" y="245" fill="white" font-size="18">
+  <!-- COLUMN 3: Skills Meters (X: 800, Width: 350) -->
+  <g transform="translate(800, 90)">
+    <rect x="0" y="0" width="350" height="480" class="panel"/>
+    <rect x="0" y="0" width="350" height="40" class="panel-header" style="border-bottom-left-radius:0; border-bottom-right-radius:0;"/>
+    <text x="20" y="26" class="text-title">CAPABILITY METRICS</text>
 
-🤖 Major : Artificial Intelligence
+    <g transform="translate(20, 80)">
+      <!-- Skill 1 -->
+      <text x="0" y="0" class="text-body">Python / FastApi</text>
+      <text x="310" y="0" class="text-mono" text-anchor="end">95%</text>
+      <rect x="0" y="10" width="310" height="6" fill="#11112b" rx="3"/>
+      <rect x="0" y="10" height="6" fill="url(#primary)" rx="3" class="bar-fill" style="--target-width: 294px;"/>
 
-</text>
+      <!-- Skill 2 -->
+      <text x="0" y="45" class="text-body">Machine Learning</text>
+      <text x="310" y="45" class="text-mono" text-anchor="end">90%</text>
+      <rect x="0" y="55" width="310" height="6" fill="#11112b" rx="3"/>
+      <rect x="0" y="55" height="6" fill="url(#primary)" rx="3" class="bar-fill" style="--target-width: 279px;"/>
 
-<text x="60" y="280" fill="white" font-size="18">
+      <!-- Skill 3 -->
+      <text x="0" y="90" class="text-body">Computer Vision</text>
+      <text x="310" y="90" class="text-mono" text-anchor="end">85%</text>
+      <rect x="0" y="100" width="310" height="6" fill="#11112b" rx="3"/>
+      <rect x="0" y="100" height="6" fill="url(#primary)" rx="3" class="bar-fill" style="--target-width: 263px;"/>
 
-🌍 Location : Sri Lanka
+      <!-- Skill 4 -->
+      <text x="0" y="135" class="text-body">Deep Learning</text>
+      <text x="310" y="135" class="text-mono" text-anchor="end">80%</text>
+      <rect x="0" y="145" width="310" height="6" fill="#11112b" rx="3"/>
+      <rect x="0" y="145" height="6" fill="url(#success)" rx="3" class="bar-fill" style="--target-width: 248px;"/>
 
-</text>
+      <!-- Skill 5 -->
+      <text x="0" y="180" class="text-body">SQL / NoSQL</text>
+      <text x="310" y="180" class="text-mono" text-anchor="end">88%</text>
+      <rect x="0" y="190" width="310" height="6" fill="#11112b" rx="3"/>
+      <rect x="0" y="190" height="6" fill="url(#success)" rx="3" class="bar-fill" style="--target-width: 272px;"/>
 
-<text x="60" y="315" fill="#00FF88" font-size="18">
-
-🟢 Status : ONLINE
-
-</text>
-
-<text x="60" y="350" fill="white" font-size="18">
-
-🎯 Mission :
-
-</text>
-
-<text x="60" y="380" fill="#00BFFF" font-size="17">
-
-Building Intelligent Systems
-
-</text>
-
-<!-- Right Panel -->
-
-<rect
-x="430"
-y="100"
-width="730"
-height="330"
-rx="15"
-fill="#0D1117"
-stroke="#30363D"/>
-
-<text
-x="460"
-y="135"
-fill="#7B68EE"
-font-size="22"
-font-weight="bold">
-
-AI CORE
-
-</text>
-
-<!-- Skill Bars -->
-
-<text x="460" y="185" fill="white">Python</text>
-<rect x="620" y="170" width="450" height="15" rx="8" fill="#30363D"/>
-<rect x="620" y="170" width="430" height="15" rx="8" fill="#00FFFF"/>
-
-<text x="460" y="225" fill="white">Machine Learning</text>
-<rect x="620" y="210" width="450" height="15" rx="8" fill="#30363D"/>
-<rect x="620" y="210" width="410" height="15" rx="8" fill="#7B68EE"/>
-
-<text x="460" y="265" fill="white">Computer Vision</text>
-<rect x="620" y="250" width="450" height="15" rx="8" fill="#30363D"/>
-<rect x="620" y="250" width="390" height="15" rx="8" fill="#00BFFF"/>
-
-<text x="460" y="305" fill="white">Deep Learning</text>
-<rect x="620" y="290" width="450" height="15" rx="8" fill="#30363D"/>
-<rect x="620" y="290" width="350" height="15" rx="8" fill="#00FFFF"/>
-
-<text x="460" y="345" fill="white">FastAPI</text>
-<rect x="620" y="330" width="450" height="15" rx="8" fill="#30363D"/>
-<rect x="620" y="330" width="330" height="15" rx="8" fill="#7B68EE"/>
-
-<text x="460" y="385" fill="white">Docker</text>
-<rect x="620" y="370" width="450" height="15" rx="8" fill="#30363D"/>
-<rect x="620" y="370" width="170" height="15" rx="8" fill="#00BFFF"/>
-
+      <!-- Skill 6 -->
+      <text x="0" y="225" class="text-body">Frontend / Vue / React</text>
+      <text x="310" y="225" class="text-mono" text-anchor="end">75%</text>
+      <rect x="0" y="235" width="310" height="6" fill="#11112b" rx="3"/>
+      <rect x="0" y="235" height="6" fill="url(#warning)" rx="3" class="bar-fill" style="--target-width: 232px;"/>
+      
+      <!-- Skill 7 -->
+      <text x="0" y="270" class="text-body">Docker / Cloud</text>
+      <text x="310" y="270" class="text-mono" text-anchor="end">70%</text>
+      <rect x="0" y="280" width="310" height="6" fill="#11112b" rx="3"/>
+      <rect x="0" y="280" height="6" fill="url(#warning)" rx="3" class="bar-fill" style="--target-width: 217px;"/>
+    </g>
+    
+    <!-- Mini Graph -->
+    <g transform="translate(20, 390)">
+      <text x="0" y="0" class="text-sub">Network Activity</text>
+      <path d="M 0 50 L 30 40 L 60 45 L 90 20 L 120 25 L 150 10 L 180 30 L 210 15 L 240 40 L 270 20 L 310 35" fill="none" stroke="#00FFFF" stroke-width="2" filter="url(#glow)"/>
+      <path d="M 0 50 L 30 40 L 60 45 L 90 20 L 120 25 L 150 10 L 180 30 L 210 15 L 240 40 L 270 20 L 310 35 L 310 60 L 0 60 Z" fill="rgba(0, 255, 255, 0.1)"/>
+    </g>
+  </g>
 </svg>

@@ -1,33 +1,89 @@
-<svg width="560" height="220" viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14142b"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    <linearGradient id="card-hover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e40"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    
+    <linearGradient id="badge-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF87"/>
+      <stop offset="100%" stop-color="#60EFFF"/>
+    </linearGradient>
 
-<rect width="560" height="220" rx="18" fill="#0D1117" stroke="#30363D"/>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-<text x="25" y="50" font-size="30">🌿</text>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
 
-<text x="70" y="50" font-size="25" fill="#00FF88" font-weight="bold">
+  <style>
+    .card { transition: all 0.3s ease; transform-origin: center; cursor: pointer; }
+    .card:hover { transform: scale(1.02); filter: drop-shadow(0 10px 15px rgba(0, 255, 135, 0.2)); }
+    .card:hover .card-bg-rect { fill: url(#card-hover); stroke: #00FF87; }
+    
+    .title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; fill: #FFFFFF; }
+    .desc { font-family: 'Inter', sans-serif; font-size: 12px; fill: #a5b4fc; }
+    .feature { font-family: 'Inter', sans-serif; font-size: 11px; fill: #8be9fd; }
+    .badge-text { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: bold; fill: #FFFFFF; }
+    .btn-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: bold; fill: #14142b; }
+    .btn-outline-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: bold; fill: #FFFFFF; }
+  </style>
 
-Plant Disease Detection
+  <g class="card">
+    <rect x="5" y="5" width="390" height="240" rx="12" fill="url(#card-bg)" stroke="#27c93f" stroke-width="1.5" class="card-bg-rect" filter="url(#shadow)"/>
+    
+    <!-- Thumbnail Area -->
+    <rect x="5" y="5" width="390" height="70" rx="12" fill="rgba(39, 201, 63, 0.15)" style="border-bottom-left-radius:0; border-bottom-right-radius:0;"/>
+    
+    <!-- Icon representing a plant/leaf -->
+    <path d="M 50 20 Q 70 20 70 40 Q 70 60 50 60 Q 30 60 30 40 Q 30 20 50 20 Z" fill="url(#badge-bg)" filter="url(#glow)"/>
 
-</text>
+    <!-- Badges -->
+    <g transform="translate(290, 15)">
+      <rect x="0" y="0" width="90" height="20" rx="10" fill="rgba(0, 255, 135, 0.2)" stroke="#00FF87" stroke-width="1"/>
+      <circle cx="10" cy="10" r="3" fill="#00FF87"/>
+      <text x="20" y="14" class="badge-text" fill="#00FF87">COMPLETED</text>
+    </g>
 
-<text x="25" y="95" fill="white">
+    <!-- Content -->
+    <text x="20" y="100" class="title">Plant Disease Classifier</text>
+    <text x="20" y="125" class="desc">Mobile-friendly web app using CNNs to detect</text>
+    <text x="20" y="140" class="desc">and diagnose plant diseases from leaf images.</text>
 
-Deep Learning Computer Vision
+    <!-- Tech Stack -->
+    <g transform="translate(20, 160)">
+      <rect x="0" y="0" width="80" height="20" rx="4" fill="rgba(123, 104, 238, 0.2)"/>
+      <text x="40" y="14" class="badge-text" text-anchor="middle">TensorFlow</text>
+      
+      <rect x="90" y="0" width="60" height="20" rx="4" fill="rgba(65, 184, 131, 0.2)"/>
+      <text x="120" y="14" class="badge-text" text-anchor="middle">Vue.js</text>
 
-</text>
+      <rect x="160" y="0" width="70" height="20" rx="4" fill="rgba(255, 212, 59, 0.2)"/>
+      <text x="195" y="14" class="badge-text" text-anchor="middle">Python</text>
+    </g>
 
-<text x="25" y="125" fill="#8B949E">
+    <!-- Key Feature -->
+    <circle cx="25" cy="205" r="3" fill="#8be9fd"/>
+    <text x="35" y="209" class="feature">Real-time inference &lt; 200ms</text>
 
-TensorFlow • CNN • OpenCV
+    <!-- Buttons -->
+    <g transform="translate(220, 200)">
+      <rect x="0" y="0" width="75" height="26" rx="4" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.3)"/>
+      <text x="37.5" y="17" class="btn-outline-text" text-anchor="middle">GitHub</text>
 
-</text>
-
-<rect x="25" y="160" width="120" height="35" rx="18" fill="#238636"/>
-
-<text x="53" y="183" fill="white">
-
-READY
-
-</text>
-
+      <rect x="85" y="0" width="75" height="26" rx="4" fill="url(#badge-bg)"/>
+      <text x="122.5" y="17" class="btn-text" text-anchor="middle">Demo ↗</text>
+    </g>
+  </g>
 </svg>

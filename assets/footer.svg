@@ -1,75 +1,97 @@
-<svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050510"/>
+      <stop offset="50%" stop-color="#0a0a20"/>
+      <stop offset="100%" stop-color="#020205"/>
+    </linearGradient>
 
-<defs>
+    <radialGradient id="galaxy" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7B68EE" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#050510" stop-opacity="0"/>
+    </radialGradient>
 
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#0D1117"/>
-<stop offset="100%" stop-color="#161B22"/>
-</linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
-<linearGradient id="text">
-<stop offset="0%" stop-color="#7B68EE"/>
-<stop offset="100%" stop-color="#00FFFF"/>
-</linearGradient>
+  <style>
+    @keyframes shutdown {
+      0%, 80% { opacity: 1; filter: drop-shadow(0 0 10px #00FFFF); }
+      85% { opacity: 0.2; }
+      90% { opacity: 0.8; }
+      95% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+    
+    .core-light { animation: shutdown 10s infinite; }
+    .floating { animation: float 4s ease-in-out infinite; transform-origin: center; }
+    .star-1 { animation: twinkle 3s infinite; }
+    .star-2 { animation: twinkle 4s infinite 1s; }
+    .star-3 { animation: twinkle 5s infinite 2s; }
+    
+    .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
+    .subtitle { font-family: 'Inter', sans-serif; font-size: 14px; fill: #a5b4fc; }
+    .sys-text { font-family: 'Fira Code', monospace; font-size: 12px; fill: #8be9fd; opacity: 0.7; }
+  </style>
 
-</defs>
+  <rect width="1200" height="250" fill="url(#bg)"/>
+  <rect width="1200" height="250" fill="url(#galaxy)"/>
 
-<rect
-width="1200"
-height="220"
-fill="url(#bg)"
-rx="20"/>
+  <!-- Stars -->
+  <g fill="white">
+    <circle cx="100" cy="50" r="1.5" class="star-1" />
+    <circle cx="250" cy="120" r="1" class="star-2" />
+    <circle cx="450" cy="80" r="2" class="star-3" />
+    <circle cx="650" cy="180" r="1.5" class="star-1" />
+    <circle cx="850" cy="60" r="1" class="star-2" />
+    <circle cx="1050" cy="150" r="2" class="star-3" />
+    <circle cx="1150" cy="40" r="1.5" class="star-1" />
+    <circle cx="50" cy="200" r="2" class="star-2" />
+    <circle cx="300" cy="220" r="1" class="star-3" />
+    <circle cx="900" cy="210" r="1.5" class="star-2" />
+  </g>
 
-<!-- Stars -->
+  <!-- Divider -->
+  <line x1="100" y1="40" x2="1100" y2="40" stroke="#7B68EE" stroke-width="1" opacity="0.3"/>
 
-<circle cx="100" cy="40" r="2" fill="white"/>
-<circle cx="250" cy="70" r="2" fill="white"/>
-<circle cx="420" cy="35" r="2" fill="white"/>
-<circle cx="640" cy="80" r="2" fill="white"/>
-<circle cx="820" cy="45" r="2" fill="white"/>
-<circle cx="1010" cy="70" r="2" fill="white"/>
+  <!-- Central Core / AI Shutdown effect -->
+  <g transform="translate(600, 125)" class="floating">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#7B68EE" stroke-width="2" stroke-dasharray="10 5" opacity="0.5"/>
+    <circle cx="0" cy="0" r="25" fill="#00FFFF" opacity="0.1" class="core-light"/>
+    <circle cx="0" cy="0" r="15" fill="#00FFFF" filter="url(#glow)" class="core-light"/>
+    <path d="M -8 -8 L 8 8 M 8 -8 L -8 8" stroke="#11112b" stroke-width="3" class="core-light"/>
+  </g>
 
-<!-- Title -->
+  <!-- Text -->
+  <text x="600" y="200" class="title" text-anchor="middle">UMANDA THATHSARANI</text>
+  <text x="600" y="225" class="subtitle" text-anchor="middle">Building intelligent systems for a better future.</text>
 
-<text
-x="600"
-y="90"
-text-anchor="middle"
-font-size="34"
-font-family="Segoe UI"
-font-weight="bold"
-fill="url(#text)">
+  <!-- System logs -->
+  <text x="100" y="100" class="sys-text">> Saving session state...</text>
+  <text x="100" y="120" class="sys-text">> Terminating background neural networks...</text>
+  <text x="100" y="140" class="sys-text">> Closing external ports...</text>
+  <text x="100" y="160" class="sys-text" fill="#ffb86c">> AI Core entering sleep mode...</text>
 
-🚀 Thanks for Visiting
-
-</text>
-
-<!-- Quote -->
-
-<text
-x="600"
-y="135"
-text-anchor="middle"
-font-size="21"
-fill="white"
-font-family="Segoe UI">
-
-Building Intelligent Systems, One Project at a Time.
-
-</text>
-
-<!-- Bottom -->
-
-<text
-x="600"
-y="180"
-text-anchor="middle"
-font-size="18"
-fill="#8B949E"
-font-family="Segoe UI">
-
-⭐ Star a repository if you enjoyed my work ⭐
-
-</text>
+  <!-- Social placeholders (Visual only in SVG) -->
+  <g transform="translate(950, 100)">
+    <text x="0" y="0" class="subtitle" font-weight="bold">CONNECT</text>
+    <text x="0" y="25" class="sys-text" fill="#00FFFF">/in/umandathathsarani</text>
+    <text x="0" y="45" class="sys-text" fill="#00FF87">@umandathathsarani</text>
+    <text x="0" y="65" class="sys-text" fill="#ff79c6">umandathathsarani@gmail.com</text>
+  </g>
 
 </svg>

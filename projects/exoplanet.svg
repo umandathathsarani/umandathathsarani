@@ -1,70 +1,88 @@
-<svg width="560" height="220" viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14142b"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    <linearGradient id="card-hover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e40"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    
+    <linearGradient id="badge-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7B68EE"/>
+      <stop offset="100%" stop-color="#00FFFF"/>
+    </linearGradient>
 
-<defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#161B22"/>
-<stop offset="100%" stop-color="#0D1117"/>
-</linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
 
-<linearGradient id="title">
-<stop offset="0%" stop-color="#7B68EE"/>
-<stop offset="100%" stop-color="#00FFFF"/>
-</linearGradient>
+  <style>
+    .card { transition: all 0.3s ease; transform-origin: center; cursor: pointer; }
+    .card:hover { transform: scale(1.02); filter: drop-shadow(0 10px 15px rgba(0, 255, 255, 0.2)); }
+    .card:hover .card-bg-rect { fill: url(#card-hover); stroke: #00FFFF; }
+    
+    .title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; fill: #FFFFFF; }
+    .desc { font-family: 'Inter', sans-serif; font-size: 12px; fill: #a5b4fc; }
+    .feature { font-family: 'Inter', sans-serif; font-size: 11px; fill: #8be9fd; }
+    .badge-text { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: bold; fill: #FFFFFF; }
+    .btn-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: bold; fill: #FFFFFF; }
+  </style>
 
-</defs>
+  <g class="card">
+    <rect x="5" y="5" width="390" height="240" rx="12" fill="url(#card-bg)" stroke="#7B68EE" stroke-width="1.5" class="card-bg-rect" filter="url(#shadow)"/>
+    
+    <!-- Thumbnail Area -->
+    <rect x="5" y="5" width="390" height="70" rx="12" fill="rgba(123, 104, 238, 0.15)" style="border-bottom-left-radius:0; border-bottom-right-radius:0;"/>
+    <circle cx="50" cy="40" r="20" fill="url(#badge-bg)" filter="url(#glow)"/>
+    <circle cx="50" cy="40" r="12" fill="#14142b"/>
+    <circle cx="50" cy="40" r="6" fill="#00FFFF"/>
 
-<rect width="560" height="220" rx="18" fill="url(#bg)" stroke="#30363D"/>
+    <!-- Badges -->
+    <g transform="translate(290, 15)">
+      <rect x="0" y="0" width="90" height="20" rx="10" fill="rgba(0, 255, 135, 0.2)" stroke="#00FF87" stroke-width="1"/>
+      <circle cx="10" cy="10" r="3" fill="#00FF87"/>
+      <text x="20" y="14" class="badge-text" fill="#00FF87">ACTIVE</text>
+    </g>
 
-<text x="25" y="50" font-size="30">🌌</text>
+    <!-- Content -->
+    <text x="20" y="100" class="title">Exoplanet Detection AI</text>
+    <text x="20" y="125" class="desc">Deep learning model analyzing NASA Kepler data</text>
+    <text x="20" y="140" class="desc">to identify potential exoplanetary transits.</text>
 
-<text x="70" y="50"
-font-size="26"
-font-weight="bold"
-fill="url(#title)"
-font-family="Segoe UI">
+    <!-- Tech Stack -->
+    <g transform="translate(20, 160)">
+      <rect x="0" y="0" width="70" height="20" rx="4" fill="rgba(123, 104, 238, 0.2)"/>
+      <text x="35" y="14" class="badge-text" text-anchor="middle">PyTorch</text>
+      
+      <rect x="80" y="0" width="70" height="20" rx="4" fill="rgba(0, 255, 255, 0.2)"/>
+      <text x="115" y="14" class="badge-text" text-anchor="middle">FastAPI</text>
 
-Exoplanet Explorer
+      <rect x="160" y="0" width="70" height="20" rx="4" fill="rgba(255, 184, 108, 0.2)"/>
+      <text x="195" y="14" class="badge-text" text-anchor="middle">Pandas</text>
+    </g>
 
-</text>
+    <!-- Key Feature -->
+    <circle cx="25" cy="205" r="3" fill="#8be9fd"/>
+    <text x="35" y="209" class="feature">94% Accuracy on Test Set</text>
 
-<text
-x="25"
-y="95"
-font-size="18"
-fill="white"
-font-family="Segoe UI">
+    <!-- Buttons -->
+    <g transform="translate(220, 200)">
+      <rect x="0" y="0" width="75" height="26" rx="4" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.3)"/>
+      <text x="37.5" y="17" class="btn-text" text-anchor="middle">GitHub</text>
 
-AI-powered astronomy platform
-
-</text>
-
-<text
-x="25"
-y="125"
-font-size="15"
-fill="#8B949E">
-
-FastAPI • Vue • PostgreSQL • ML
-
-</text>
-
-<rect
-x="25"
-y="160"
-width="120"
-height="35"
-rx="18"
-fill="#238636"/>
-
-<text
-x="53"
-y="183"
-fill="white"
-font-size="15">
-
-ACTIVE
-
-</text>
-
+      <rect x="85" y="0" width="75" height="26" rx="4" fill="url(#badge-bg)"/>
+      <text x="122.5" y="17" class="btn-text" text-anchor="middle">Demo ↗</text>
+    </g>
+  </g>
 </svg>

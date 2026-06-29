@@ -1,0 +1,68 @@
+<svg width="100%" height="40" viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neon-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a0a1a" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#7B68EE"/>
+      <stop offset="50%" stop-color="#00FFFF"/>
+      <stop offset="85%" stop-color="#7B68EE"/>
+      <stop offset="100%" stop-color="#0a0a1a" stop-opacity="0"/>
+    </linearGradient>
+    
+    <filter id="glow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="6" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; filter: blur(2px); }
+      50% { opacity: 1; filter: blur(0px); }
+    }
+    @keyframes moveRight {
+      0% { transform: translateX(-100px); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateX(1300px); opacity: 0; }
+    }
+    @keyframes moveLeft {
+      0% { transform: translateX(1300px); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateX(-100px); opacity: 0; }
+    }
+    
+    .line-core {
+      stroke: url(#neon-glow);
+      stroke-width: 2;
+      filter: url(#glow);
+      animation: pulse 4s ease-in-out infinite;
+    }
+    
+    .particle-1 { animation: moveRight 3s linear infinite; }
+    .particle-2 { animation: moveLeft 4s linear infinite 1s; }
+    .particle-3 { animation: moveRight 5s linear infinite 2s; }
+  </style>
+
+  <!-- Central glowing line -->
+  <line x1="0" y1="20" x2="1200" y2="20" class="line-core"/>
+  
+  <!-- Circuit Nodes in center -->
+  <circle cx="580" cy="20" r="3" fill="#00FFFF" filter="url(#glow)"/>
+  <rect x="595" y="15" width="10" height="10" transform="rotate(45 600 20)" fill="#7B68EE" filter="url(#glow)"/>
+  <circle cx="620" cy="20" r="3" fill="#00FFFF" filter="url(#glow)"/>
+
+  <!-- Moving Particles -->
+  <g class="particle-1">
+    <ellipse cx="0" cy="20" rx="8" ry="2" fill="#FFFFFF" filter="url(#glow)"/>
+  </g>
+  <g class="particle-2">
+    <ellipse cx="0" cy="20" rx="6" ry="1.5" fill="#00FFFF" filter="url(#glow)"/>
+  </g>
+  <g class="particle-3">
+    <ellipse cx="0" cy="20" rx="10" ry="2" fill="#7B68EE" filter="url(#glow)"/>
+  </g>
+</svg>
