@@ -1,0 +1,134 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0D1117"/>
+<stop offset="100%" stop-color="#161B22"/>
+</linearGradient>
+
+<linearGradient id="node">
+<stop offset="0%" stop-color="#7B68EE"/>
+<stop offset="100%" stop-color="#00FFFF"/>
+</linearGradient>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="4"/>
+</filter>
+
+</defs>
+
+<rect width="1200" height="500" rx="18" fill="url(#bg)" stroke="#30363D"/>
+
+<text
+x="40"
+y="55"
+font-size="34"
+font-family="Segoe UI"
+font-weight="bold"
+fill="#7B68EE">
+
+🧠 AI NEURAL NETWORK
+
+</text>
+
+<line
+x1="40"
+y1="75"
+x2="1160"
+y2="75"
+stroke="#30363D"/>
+
+<!-- Connections -->
+
+<g stroke="#3B82F6" stroke-width="2" opacity="0.6">
+
+<line x1="170" y1="150" x2="430" y2="120"/>
+<line x1="170" y1="150" x2="430" y2="250"/>
+<line x1="170" y1="250" x2="430" y2="120"/>
+<line x1="170" y1="250" x2="430" y2="250"/>
+<line x1="170" y1="350" x2="430" y2="250"/>
+<line x1="170" y1="350" x2="430" y2="380"/>
+
+<line x1="430" y1="120" x2="700" y2="170"/>
+<line x1="430" y1="250" x2="700" y2="170"/>
+<line x1="430" y1="250" x2="700" y2="330"/>
+<line x1="430" y1="380" x2="700" y2="330"/>
+
+<line x1="700" y1="170" x2="980" y2="250"/>
+<line x1="700" y1="330" x2="980" y2="250"/>
+
+</g>
+
+<!-- Nodes -->
+
+<g fill="url(#node)">
+
+<circle cx="170" cy="150" r="16"/>
+<circle cx="170" cy="250" r="16"/>
+<circle cx="170" cy="350" r="16"/>
+
+<circle cx="430" cy="120" r="16"/>
+<circle cx="430" cy="250" r="16"/>
+<circle cx="430" cy="380" r="16"/>
+
+<circle cx="700" cy="170" r="16"/>
+<circle cx="700" cy="330" r="16"/>
+
+<circle cx="980" cy="250" r="18"/>
+
+</g>
+
+<!-- Labels -->
+
+<text x="110" y="430" fill="white" font-size="18">INPUT</text>
+
+<text x="385" y="430" fill="white" font-size="18">HIDDEN LAYER 1</text>
+
+<text x="650" y="430" fill="white" font-size="18">HIDDEN LAYER 2</text>
+
+<text x="945" y="430" fill="white" font-size="18">OUTPUT</text>
+
+<!-- Information Box -->
+
+<rect
+x="780"
+y="95"
+width="330"
+height="120"
+rx="15"
+fill="#10161F"
+stroke="#30363D"/>
+
+<text
+x="810"
+y="130"
+fill="#00FFFF"
+font-size="22"
+font-family="Segoe UI">
+
+AI CORE
+
+</text>
+
+<text
+x="810"
+y="165"
+fill="white"
+font-size="18">
+
+Model Type : Deep Neural Network
+
+</text>
+
+<text
+x="810"
+y="195"
+fill="white"
+font-size="18">
+
+Status : Training & Learning
+
+</text>
+
+</svg>

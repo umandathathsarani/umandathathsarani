@@ -77,6 +77,16 @@ My interests include:
 
 ---
 
+# 🧠 Neural Network Visualization
+
+<div align="center">
+
+<img src="./assets/neural-network.svg" width="100%">
+
+</div>
+
+---
+
 <p align="center">
 
 <img src="./assets/dashboard.svg" width="100%">
