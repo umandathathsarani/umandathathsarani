@@ -1,0 +1,75 @@
+<svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0D1117"/>
+<stop offset="100%" stop-color="#161B22"/>
+</linearGradient>
+
+<linearGradient id="text">
+<stop offset="0%" stop-color="#7B68EE"/>
+<stop offset="100%" stop-color="#00FFFF"/>
+</linearGradient>
+
+</defs>
+
+<rect
+width="1200"
+height="220"
+fill="url(#bg)"
+rx="20"/>
+
+<!-- Stars -->
+
+<circle cx="100" cy="40" r="2" fill="white"/>
+<circle cx="250" cy="70" r="2" fill="white"/>
+<circle cx="420" cy="35" r="2" fill="white"/>
+<circle cx="640" cy="80" r="2" fill="white"/>
+<circle cx="820" cy="45" r="2" fill="white"/>
+<circle cx="1010" cy="70" r="2" fill="white"/>
+
+<!-- Title -->
+
+<text
+x="600"
+y="90"
+text-anchor="middle"
+font-size="34"
+font-family="Segoe UI"
+font-weight="bold"
+fill="url(#text)">
+
+🚀 Thanks for Visiting
+
+</text>
+
+<!-- Quote -->
+
+<text
+x="600"
+y="135"
+text-anchor="middle"
+font-size="21"
+fill="white"
+font-family="Segoe UI">
+
+Building Intelligent Systems, One Project at a Time.
+
+</text>
+
+<!-- Bottom -->
+
+<text
+x="600"
+y="180"
+text-anchor="middle"
+font-size="18"
+fill="#8B949E"
+font-family="Segoe UI">
+
+⭐ Star a repository if you enjoyed my work ⭐
+
+</text>
+
+</svg>
