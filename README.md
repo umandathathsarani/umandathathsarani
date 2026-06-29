@@ -831,3 +831,189 @@ AI Engineer 🚀
 </div>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00BFFF,50:7B68EE,100:6A5ACD&height=3"/>
+
+<!-- ====================================================== -->
+<!--            ACHIEVEMENTS & OPEN SOURCE HUB              -->
+<!-- ====================================================== -->
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:6A5ACD,50:7B68EE,100:00BFFF&height=3"/>
+
+# 🏆 Achievement Command Center
+
+<div align="center">
+
+### "Success is built one commit at a time."
+
+</div>
+
+---
+
+# 🏅 GitHub Trophy Wall
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=umandathathsarani&theme=tokyonight&no-frame=true&row=2&column=4&margin-w=15&margin-h=15"/>
+
+</div>
+
+---
+
+# 🐍 Contribution Snake
+
+<div align="center">
+
+> **Coming Soon...**
+
+After publishing your GitHub Action, this section will display an animated snake that "eats" your contributions.
+
+<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg"/>
+
+</div>
+
+---
+
+# 🌟 Open Source Journey
+
+<div align="center">
+
+| 🚀 Stage | Status |
+|----------|:------:|
+| Git & GitHub | ✅ |
+| Personal Projects | ✅ |
+| AI Portfolio | ✅ |
+| Open Source Contributions | 🔄 |
+| First Pull Request | 🎯 |
+| AI Community Contributor | 🚀 |
+
+</div>
+
+---
+
+# 🎓 Learning Progress
+
+```text
+Python                 ██████████████████████ 100%
+
+Machine Learning       ████████████████████░ 95%
+
+Computer Vision        ██████████████████░░░ 90%
+
+TensorFlow             █████████████████░░░░ 85%
+
+FastAPI                ████████████████░░░░░ 80%
+
+Vue.js                 ██████████████░░░░░░░ 70%
+
+Docker                 ███████░░░░░░░░░░░░░░ 35%
+
+PyTorch                ██████░░░░░░░░░░░░░░░ 30%
+
+LLMs                   █████░░░░░░░░░░░░░░░░ 25%
+```
+
+---
+
+# 🚀 AI Engineer Roadmap
+
+```text
+Foundation
+     │
+     ├── Python ✅
+     ├── SQL ✅
+     ├── Git ✅
+     │
+     ▼
+Machine Learning ✅
+     │
+     ▼
+Deep Learning ✅
+     │
+     ▼
+Computer Vision ✅
+     │
+     ▼
+Cloud Deployment 🔄
+     │
+     ▼
+MLOps 🔄
+     │
+     ▼
+Large Language Models 🔄
+     │
+     ▼
+AI Engineer 🚀
+```
+
+---
+
+# 🎖 Professional Highlights
+
+<div align="center">
+
+🌌 AI Enthusiast
+
+🤖 Machine Learning Developer
+
+👁 Computer Vision Explorer
+
+⚡ FastAPI Backend Developer
+
+🌐 Full Stack Developer
+
+📱 Cross-Platform App Developer
+
+📊 Data Analytics Enthusiast
+
+☁️ Cloud Deployment Learner
+
+</div>
+
+---
+
+# 📅 Mission 2026
+
+- 🎯 Secure an AI / ML Internship
+- 🚀 Build 30+ Professional AI Projects
+- 🤝 Contribute to Open Source
+- 📝 Publish Technical Articles
+- 🧠 Master PyTorch
+- ☁️ Learn MLOps
+- 🤗 Learn Hugging Face
+- 🏆 Reach 1000+ GitHub Contributions
+
+---
+
+<div align="center">
+
+## ⚡ AI Core Status
+
+```text
+Initializing Neural Network...
+
+Loading Experience............... ████████████░░░░ 75%
+
+Loading AI Knowledge............ █████████████░░░ 80%
+
+Loading Open Source Journey..... ████████░░░░░░░░ 50%
+
+Loading Future Goals............ ███████████████░ 90%
+
+SYSTEM STATUS
+
+🟢 ONLINE
+```
+
+</div>
+
+---
+
+<div align="center">
+
+### 🌠 "Every repository is another experiment. Every commit is another lesson."
+
+</div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00BFFF,50:7B68EE,100:6A5ACD&height=3"/>
+
+
+
