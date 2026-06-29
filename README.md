@@ -42,7 +42,9 @@ Status        : Building Intelligent Systems
 
 # 🌌 About Me
 
-I'm an undergraduate specializing in **Artificial Intelligence** with a passion for creating intelligent software that solves real-world problems.
+I'm an undergraduate specializing in **Artificial Intelligence** who enjoys building intelligent applications that combine machine learning, computer vision, and full-stack development.
+
+My goal is to create AI solutions that solve real-world problems while continuously learning new technologies and contributing to impactful projects.
 
 My interests include:
 
@@ -60,6 +62,16 @@ My interests include:
 <div align="center">
 
 <img src="./assets/terminal.svg" width="100%">
+
+</div>
+
+---
+
+# 🛰 AI Status Center
+
+<div align="center">
+
+<img src="./assets/status-center.svg" width="100%">
 
 </div>
 

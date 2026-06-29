@@ -1,0 +1,95 @@
+<svg width="1200" height="460" viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0D1117"/>
+<stop offset="100%" stop-color="#161B22"/>
+</linearGradient>
+
+<linearGradient id="title">
+<stop offset="0%" stop-color="#7B68EE"/>
+<stop offset="100%" stop-color="#00FFFF"/>
+</linearGradient>
+
+</defs>
+
+<rect width="1200" height="460" rx="18" fill="url(#bg)" stroke="#30363D"/>
+
+<text
+x="40"
+y="55"
+font-size="34"
+font-family="Segoe UI"
+font-weight="bold"
+fill="url(#title)">
+
+🛰 AI STATUS CENTER
+
+</text>
+
+<line
+x1="40"
+y1="75"
+x2="1160"
+y2="75"
+stroke="#30363D"/>
+
+<!-- LEFT -->
+
+<text x="70" y="130" fill="#00FF88" font-size="22">🟢 SYSTEM STATUS</text>
+<text x="350" y="130" fill="white" font-size="22">ONLINE</text>
+
+<text x="70" y="175" fill="#00FF88" font-size="22">🤖 AI CORE</text>
+<text x="350" y="175" fill="white" font-size="22">ACTIVE</text>
+
+<text x="70" y="220" fill="#00FF88" font-size="22">🚀 CURRENT PROJECT</text>
+<text x="350" y="220" fill="white" font-size="22">Exoplanet Explorer</text>
+
+<text x="70" y="265" fill="#00FF88" font-size="22">🎯 FOCUS</text>
+<text x="350" y="265" fill="white" font-size="22">Artificial Intelligence</text>
+
+<text x="70" y="310" fill="#00FF88" font-size="22">🌍 LOCATION</text>
+<text x="350" y="310" fill="white" font-size="22">Sri Lanka</text>
+
+<!-- RIGHT -->
+
+<text x="650" y="130" fill="#00FFFF" font-size="22">📚 LEARNING</text>
+<text x="930" y="130" fill="white" font-size="22">PyTorch</text>
+
+<text x="650" y="175" fill="#00FFFF" font-size="22">☁ CLOUD</text>
+<text x="930" y="175" fill="white" font-size="22">Docker</text>
+
+<text x="650" y="220" fill="#00FFFF" font-size="22">🧠 NEXT GOAL</text>
+<text x="930" y="220" fill="white" font-size="22">LLMs</text>
+
+<text x="650" y="265" fill="#00FFFF" font-size="22">💼 OPEN TO</text>
+<text x="930" y="265" fill="white" font-size="22">Internships</text>
+
+<text x="650" y="310" fill="#00FFFF" font-size="22">⚡ UPTIME</text>
+<text x="930" y="310" fill="#00FF88" font-size="22">99.9%</text>
+
+<!-- Bottom -->
+
+<rect
+x="70"
+y="360"
+width="1060"
+height="55"
+rx="12"
+fill="#10161F"
+stroke="#30363D"/>
+
+<text
+x="600"
+y="395"
+text-anchor="middle"
+fill="#7B68EE"
+font-size="20"
+font-family="Consolas">
+
+Building Intelligent Systems • Learning Every Day • Creating Impact
+
+</text>
+
+</svg>
