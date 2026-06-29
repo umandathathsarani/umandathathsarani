@@ -42,8 +42,7 @@
 
 ---
 
-<details>
-<summary><h2>🌌 About Me</h2></summary>
+## 🌌 About Me
 
 I am an aspiring **AI Engineer and ML Researcher** with a strong foundation in full-stack development. I am deeply passionate about pushing the boundaries of what machines can learn and how they can perceive the world around them. 
 
@@ -54,10 +53,9 @@ My career objective is to build highly scalable, intelligent systems that solve 
 - 🌐 Proficient in bridging the gap between AI and user-facing applications.
 - 🌱 Currently exploring advanced Generative AI and MLOps.
 
-</details>
+---
 
-<details>
-<summary><h2>💻 AI Dashboard & Status</h2></summary>
+## 💻 AI Dashboard & Status
 
 <div align="center">
 
@@ -68,10 +66,9 @@ My career objective is to build highly scalable, intelligent systems that solve 
 
 </div>
 
-</details>
+---
 
-<details>
-<summary><h2>🛠 Skills Matrix</h2></summary>
+## 🛠 Skills Matrix
 
 | Category | Technologies & Tools |
 |---|---|
@@ -82,10 +79,9 @@ My career objective is to build highly scalable, intelligent systems that solve 
 | **Databases** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white) |
 | **DevOps & Cloud** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) |
 
-</details>
+---
 
-<details>
-<summary><h2>🚀 Project Showcase</h2></summary>
+## 🚀 Project Showcase
 
 <div align="center">
   <img src="./assets/neural-network.svg" width="100%" alt="Neural Network Visualization">
@@ -118,10 +114,9 @@ My career objective is to build highly scalable, intelligent systems that solve 
   </table>
 </div>
 
-</details>
+---
 
-<details>
-<summary><h2>📈 GitHub Intelligence</h2></summary>
+## 📈 GitHub Intelligence
 
 <div align="center">
 
@@ -142,10 +137,9 @@ My career objective is to build highly scalable, intelligent systems that solve 
 
 </div>
 
-</details>
+---
 
-<details>
-<summary><h2>⏳ Experience & Education Timeline</h2></summary>
+## ⏳ Experience & Education Timeline
 
 - **[Current] BSc in Information Technology** 
   - Specialization in Artificial Intelligence.
@@ -154,8 +148,6 @@ My career objective is to build highly scalable, intelligent systems that solve 
   - Built internal tools and integrated ML models into web dashboards.
 - **[2026] Open Source Contributor**
   - Contributed to various Python-based machine learning libraries.
-
-</details>
 
 ---
 
