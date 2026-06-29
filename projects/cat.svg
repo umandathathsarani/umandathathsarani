@@ -1,0 +1,33 @@
+<svg width="560" height="220" viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="560" height="220" rx="18" fill="#0D1117" stroke="#30363D"/>
+
+<text x="25" y="50" font-size="30">🐱</text>
+
+<text x="70" y="50" font-size="25" fill="#7B68EE" font-weight="bold">
+
+Cat Breed Identifier
+
+</text>
+
+<text x="25" y="95" fill="white">
+
+Image Classification System
+
+</text>
+
+<text x="25" y="125" fill="#8B949E">
+
+TensorFlow • Mobile AI • CNN
+
+</text>
+
+<rect x="25" y="160" width="120" height="35" rx="18" fill="#1F6FEB"/>
+
+<text x="40" y="183" fill="white">
+
+DEVELOPING
+
+</text>
+
+</svg>

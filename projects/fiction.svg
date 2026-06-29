@@ -2,23 +2,23 @@
 
 <rect width="560" height="220" rx="18" fill="#0D1117" stroke="#30363D"/>
 
-<text x="25" y="50" font-size="30">🌿</text>
+<text x="25" y="50" font-size="30">📚</text>
 
-<text x="70" y="50" font-size="25" fill="#00FF88" font-weight="bold">
+<text x="70" y="50" font-size="24" fill="#00BFFF" font-weight="bold">
 
-Plant Disease Detection
+Interactive Fiction
 
 </text>
 
 <text x="25" y="95" fill="white">
 
-Deep Learning Computer Vision
+AI Storytelling Platform
 
 </text>
 
 <text x="25" y="125" fill="#8B949E">
 
-TensorFlow • CNN • OpenCV
+Gemini API • Flask • MongoDB
 
 </text>
 
@@ -26,7 +26,7 @@ TensorFlow • CNN • OpenCV
 
 <text x="53" y="183" fill="white">
 
-READY
+STABLE
 
 </text>
 

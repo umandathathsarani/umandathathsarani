@@ -73,15 +73,39 @@ My interests include:
 
 ---
 
-# 🚀 Featured Projects
+## 🚀 Featured Projects
 
-| Project                       | Description                                            |
-| ----------------------------- | ------------------------------------------------------ |
-| 🌌 Exoplanet Explorer         | AI-powered astronomy platform built with Vue + FastAPI |
-| 🌿 Plant Disease Detection    | Computer Vision application using Deep Learning        |
-| 🐱 Cat Breed Identifier       | Deep Learning image classification system              |
-| 📚 Interactive Fiction Engine | AI storytelling platform using Gemini API              |
-| 🎥 AI Video Downloader        | Smart media downloading application                    |
+<div align="center">
+
+<table>
+
+<tr>
+
+<td>
+<img src="./assets/projects/exoplanet.svg">
+</td>
+
+<td>
+<img src="./assets/projects/plant.svg">
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<img src="./assets/projects/cat.svg">
+</td>
+
+<td>
+<img src="./assets/projects/fiction.svg">
+</td>
+
+</tr>
+
+</table>
+
+</div>
 
 ---
 
