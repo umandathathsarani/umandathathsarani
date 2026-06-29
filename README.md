@@ -37,6 +37,7 @@
 <a href="mailto:binuuma3218@gmail.com"><img src="https://img.shields.io/badge/Email_2-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email 2"></a>
 <a href="https://wa.me/94742813833"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"></a>
 <a href="https://www.instagram.com/b.uma.t"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+<img src="https://komarev.com/ghpvc/?username=umandathathsarani&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views">
 
 </div>
 
@@ -130,6 +131,10 @@ My career objective is to build highly scalable, intelligent systems that solve 
 <br><br>
 
 <img src="https://streak-stats.demolab.com?user=umandathathsarani&theme=tokyonight&hide_border=true" width="100%">
+
+<br><br>
+
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=umandathathsarani&layout=compact&theme=tokyonight&hide_border=true" width="100%">
 
 <br><br>
 
