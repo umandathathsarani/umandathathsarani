@@ -145,9 +145,9 @@ My career objective is to build highly scalable, intelligent systems that solve 
 - **[Current] BSc in Information Technology** 
   - Specialization in Artificial Intelligence.
   - Participating in university AI research groups.
-- **[2024] Freelance Full-Stack Developer**
+- **[2026] Freelance Full-Stack Developer**
   - Built internal tools and integrated ML models into web dashboards.
-- **[2023] Open Source Contributor**
+- **[2026] Open Source Contributor**
   - Contributed to various Python-based machine learning libraries.
 
 ---
