@@ -1,45 +1,164 @@
-# Hi there, I'm Umanda! 👋
+# <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Hi, I'm Umanda Thathsarani
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Welcome%20to%20my%20Portfolio!&fontSize=50&fontAlignY=38&desc=Machine%20Learning%20%7C%20Computer%20Vision%20%7C%20Web%20Dev&descAlignY=58&descSize=20" />
-</div>
+### AI & Machine Learning Engineer in Progress
 
-### 👩🏽‍💻 About Me
-* 🎓 BSc IT Undergrad specializing in **Artificial Intelligence** and **Software Engineering**.
-* 🤖 Passionate about building projects in Machine Learning, Computer Vision, and Full-Stack Development.
-* 📍 Based in Sri Lanka, currently studying at the Malabe campus.
-* 🔭 Currently exploring deep learning applications and interactive web apps (like my Exoplanet Explorer and Cat Identifier!).
-* 📫 Reach out to me: **umathathsarani2003@gmail.com**
+🎓 BSc Information Technology Undergraduate specializing in **Artificial Intelligence**
+
+I enjoy building intelligent software that combines **Machine Learning**, **Computer Vision**, **Deep Learning**, **Full-Stack Development**, and **Cloud Technologies** to solve real-world problems.
+
+My goal is to become an AI Engineer capable of designing, developing, and deploying production-ready intelligent systems.
 
 ---
 
-### 🛠️ Tech Stack & Tools
+# 🚀 About Me
 
-**Languages & Frameworks:**
-<br>
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-
-**Databases & Tools:**
-<br>
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+* 🧠 Artificial Intelligence & Machine Learning
+* 👁️ Computer Vision
+* 🤖 Deep Learning
+* 🌐 Full-Stack AI Applications
+* 📱 Cross-Platform Mobile Development
+* ☁️ Cloud Deployment
+* 📊 Data Science
+* 💻 Open Source Development
 
 ---
 
-### 📊 GitHub Stats
+# 🛠 Tech Stack
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=umandathathsarani&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Umanda's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=umandathathsarani&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" width="48%" />
-</div>
+### Languages
+
+* Python
+* Java
+* JavaScript
+* SQL
+* HTML5
+* CSS3
+
+### AI / Machine Learning
+
+* TensorFlow
+* Keras
+* OpenCV
+* NumPy
+* Pandas
+* Scikit-Learn
+
+### Backend
+
+* FastAPI
+* Flask
+
+### Frontend
+
+* Vue.js
+* React Native
+* HTML
+* CSS
+* JavaScript
+
+### Databases
+
+* PostgreSQL
+* MongoDB Atlas
+* SQLite
+
+### Tools
+
+* Git
+* GitHub
+* VS Code
+* Jupyter Notebook
+* Railway
+* Render
 
 ---
 
-### 🔗 Let's Connect
+# 🌟 Featured Projects
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/binuri-umanda-859bba337)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:umathathsarani2003@gmail.com)
+## 🌌 Exoplanet Explorer
+
+An AI-powered full-stack web platform for exploring exoplanets, analyzing habitability, and visualizing astronomical datasets.
+
+**Tech**
+
+Vue • FastAPI • PostgreSQL • Machine Learning
+
+---
+
+## 🌿 Plant Disease Detection
+
+Computer Vision system capable of identifying plant diseases from leaf images using deep learning.
+
+**Tech**
+
+Python • TensorFlow • CNN • OpenCV
+
+---
+
+## 🐱 Cat Breed Identifier AI
+
+Deep learning application capable of recognizing cat breeds using image classification.
+
+**Tech**
+
+TensorFlow • Computer Vision • Mobile AI
+
+---
+
+## 🕰 Interactive Fiction Engine
+
+A cloud-powered AI storytelling platform featuring persistent game state, MongoDB Atlas integration, and Google Gemini.
+
+**Tech**
+
+Flask • MongoDB Atlas • Gemini API
+
+---
+
+## ✍️ AI Video Downloader
+
+Python application designed for intelligent media downloading and processing.
+
+---
+
+## 😌 Stress Relief Hub
+
+Interactive web application containing games and relaxation tools.
+
+---
+
+# 📈 Currently Learning
+
+* Large Language Models (LLMs)
+* Retrieval-Augmented Generation (RAG)
+* MLOps
+* Docker
+* Kubernetes
+* CI/CD
+* Hugging Face
+* PyTorch
+
+---
+
+# 🎯 2026 Goals
+
+* Build 25+ professional AI projects
+* Complete production-ready ML portfolio
+* Master Deep Learning
+* Learn MLOps
+* Contribute to Open Source
+* Secure an AI/ML Internship
+* Publish technical articles
+* Reach 1000+ GitHub contributions
+
+---
+
+# 📫 Connect With Me
+
+* 💼 LinkedIn
+* 📧 Email
+* 🌍 Portfolio Website (Coming Soon)
+
+---
+
+> *"Building intelligent software that makes technology more useful, accessible, and impactful."*
