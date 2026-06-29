@@ -22,7 +22,7 @@
       🎯 <b>Focus</b><br>Artificial Intelligence & Machine Learning
     </td>
     <td align="center" width="33%">
-      🎓 <b>Status</b><br>Undergraduate (BSc IT)<br>Open to Internships
+      🎓 <b>Status</b><br>BSc Hons IT (AI) @ SLIIT<br>3rd Year, 1st Semester
     </td>
     <td align="center" width="33%">
       📍 <b>Location</b><br>Sri Lanka<br>(Remote Ready)
@@ -45,7 +45,7 @@
 <details>
 <summary><h2>🌌 About Me</h2></summary>
 
-I am an aspiring **AI Engineer and ML Researcher** with a strong foundation in full-stack development. I am deeply passionate about pushing the boundaries of what machines can learn and how they can perceive the world around them. 
+Hi, I'm **M. Binuri Umanda Thathsarani**. I am an aspiring **AI Engineer and ML Researcher** with a strong foundation in full-stack development. I am deeply passionate about pushing the boundaries of what machines can learn and how they can perceive the world around them. 
 
 My career objective is to build highly scalable, intelligent systems that solve complex real-world problems. Whether it's training deep neural networks, deploying edge computer vision models, or building robust backend pipelines, I thrive on continuous learning and impactful engineering.
 
@@ -147,8 +147,9 @@ My career objective is to build highly scalable, intelligent systems that solve 
 <details>
 <summary><h2>⏳ Experience & Education Timeline</h2></summary>
 
-- **[Current] BSc in Information Technology** 
-  - Specialization in Artificial Intelligence.
+- **[Current] BSc Honours in Information Technology** 
+  - Specialized in Artificial Intelligence at SLIIT.
+  - Currently 3rd year 1st semester (2026 July - December).
   - Participating in university AI research groups.
 - **[2026] Freelance Full-Stack Developer**
   - Built internal tools and integrated ML models into web dashboards.
