@@ -94,18 +94,18 @@ My career objective is to build highly scalable, intelligent systems that solve 
   <table>
     <tr>
       <td>
-        <a href="#"><img src="./projects/exoplanet.svg" alt="Exoplanet Detection"></a>
+        <a href="https://github.com/umandathathsarani/exoplanet-explorer"><img src="./projects/exoplanet.svg" alt="Exoplanet Detection"></a>
       </td>
       <td>
-        <a href="#"><img src="./projects/plant.svg" alt="Plant Disease Classifier"></a>
+        <a href="https://github.com/umandathathsarani/plant-disease-detection"><img src="./projects/plant.svg" alt="Plant Disease Classifier"></a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="#"><img src="./projects/cat.svg" alt="Pet Breed Identifier"></a>
+        <a href="https://github.com/umandathathsarani/cat-identifier-ai"><img src="./projects/cat.svg" alt="Pet Breed Identifier"></a>
       </td>
       <td>
-        <a href="#"><img src="./projects/fiction.svg" alt="AI Story Generator"></a>
+        <a href="https://github.com/umandathathsarani/interactive-fiction-engine"><img src="./projects/fiction.svg" alt="AI Story Generator"></a>
       </td>
     </tr>
   </table>
@@ -116,11 +116,6 @@ My career objective is to build highly scalable, intelligent systems that solve 
 ## 📈 GitHub Intelligence
 
 <div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=umandathathsarani&show_icons=true&theme=tokyonight&hide_border=true">
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=umandathathsarani&layout=compact&theme=tokyonight&hide_border=true">
-
-<br><br>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=umandathathsarani&theme=tokyo-night&hide_border=true" width="100%">
 
