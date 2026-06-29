@@ -55,6 +55,16 @@ My interests include:
 
 ---
 
+# 💻 AI Terminal
+
+<div align="center">
+
+<img src="./assets/terminal.svg" width="100%">
+
+</div>
+
+---
+
 <p align="center">
 
 <img src="./assets/dashboard.svg" width="100%">

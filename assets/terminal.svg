@@ -1,0 +1,131 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#090B10"/>
+<stop offset="100%" stop-color="#131A24"/>
+</linearGradient>
+
+<linearGradient id="green">
+<stop offset="0%" stop-color="#00FFAA"/>
+<stop offset="100%" stop-color="#00FFFF"/>
+</linearGradient>
+
+</defs>
+
+<rect width="1200" height="500" rx="18" fill="url(#bg)" stroke="#30363D"/>
+
+<!-- Window Bar -->
+
+<rect width="1200" height="45" rx="18" fill="#1F2937"/>
+
+<circle cx="30" cy="22" r="8" fill="#FF5F56"/>
+<circle cx="55" cy="22" r="8" fill="#FFBD2E"/>
+<circle cx="80" cy="22" r="8" fill="#27C93F"/>
+
+<text
+x="600"
+y="28"
+text-anchor="middle"
+fill="white"
+font-size="18"
+font-family="Consolas">
+
+AI TERMINAL
+
+</text>
+
+<!-- Commands -->
+
+<text x="40" y="90" fill="#00FF88" font-size="22" font-family="Consolas">
+
+$ whoami
+
+</text>
+
+<text x="210" y="90" fill="white" font-size="22" font-family="Consolas">
+
+Umanda Thathsarani
+
+</text>
+
+<text x="40" y="135" fill="#00FF88" font-size="22" font-family="Consolas">
+
+$ role
+
+</text>
+
+<text x="210" y="135" fill="#00FFFF" font-size="22" font-family="Consolas">
+
+Artificial Intelligence Engineer
+
+</text>
+
+<text x="40" y="180" fill="#00FF88" font-size="22" font-family="Consolas">
+
+$ skills
+
+</text>
+
+<text x="210" y="180" fill="white" font-size="22" font-family="Consolas">
+
+Python Java FastAPI Vue React TensorFlow
+
+</text>
+
+<text x="40" y="225" fill="#00FF88" font-size="22" font-family="Consolas">
+
+$ current_project
+
+</text>
+
+<text x="290" y="225" fill="#00FFFF" font-size="22" font-family="Consolas">
+
+AI Portfolio & Machine Learning Applications
+
+</text>
+
+<text x="40" y="270" fill="#00FF88" font-size="22" font-family="Consolas">
+
+$ currently_learning
+
+</text>
+
+<text x="340" y="270" fill="white" font-size="22" font-family="Consolas">
+
+Docker • PyTorch • LLMs • MLOps
+
+</text>
+
+<text x="40" y="315" fill="#00FF88" font-size="22" font-family="Consolas">
+
+$ goal
+
+</text>
+
+<text x="210" y="315" fill="#00FFFF" font-size="22" font-family="Consolas">
+
+Build impactful AI solutions for real-world problems
+
+</text>
+
+<text x="40" y="390" fill="#00FF88" font-size="22" font-family="Consolas">
+
+$ status
+
+</text>
+
+<text x="210" y="390" fill="#27C93F" font-size="22" font-family="Consolas">
+
+ONLINE ██████████
+
+</text>
+
+<text x="40" y="455" fill="#00FF88" font-size="22" font-family="Consolas">
+
+$ _
+
+</text>
+
+</svg>
