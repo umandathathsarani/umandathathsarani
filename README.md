@@ -147,6 +147,18 @@ My interests include:
 
 ---
 
+---
+
+# 🐍 Contribution Snake
+
+<div align="center">
+
+![Snake animation](https://raw.githubusercontent.com/umandathathsarani/umandathathsarani/output/github-contribution-grid-snake-dark.svg)
+
+</div>
+
+---
+
 # 🎯 Current Learning
 
 * 🧠 Large Language Models
