@@ -1,0 +1,112 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="45%" stop-color="#1a1440"/>
+      <stop offset="100%" stop-color="#002b45"/>
+    </linearGradient>
+
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%">
+      <stop offset="0%" stop-color="#7B68EE"/>
+      <stop offset="50%" stop-color="#00BFFF"/>
+      <stop offset="100%" stop-color="#00FFFF"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <!-- Stars -->
+
+  <circle cx="90" cy="50" r="2" fill="white"/>
+  <circle cx="180" cy="120" r="1.5" fill="white"/>
+  <circle cx="350" cy="40" r="2" fill="white"/>
+  <circle cx="450" cy="150" r="1.5" fill="white"/>
+  <circle cx="670" cy="70" r="2" fill="white"/>
+  <circle cx="840" cy="120" r="2" fill="white"/>
+  <circle cx="990" cy="60" r="2" fill="white"/>
+  <circle cx="1110" cy="170" r="2" fill="white"/>
+
+  <!-- Decorative circles -->
+
+  <circle cx="1040" cy="95" r="65"
+          fill="none"
+          stroke="#7B68EE"
+          stroke-width="2"
+          opacity="0.4"/>
+
+  <circle cx="1040" cy="95" r="95"
+          fill="none"
+          stroke="#00BFFF"
+          stroke-width="2"
+          opacity="0.25"/>
+
+  <!-- Main Title -->
+
+  <text
+      x="70"
+      y="110"
+      font-size="46"
+      font-family="Segoe UI"
+      font-weight="700"
+      fill="url(#title)"
+      filter="url(#glow)">
+
+      🌌 AI RESEARCH STATION
+
+  </text>
+
+  <text
+      x="70"
+      y="165"
+      font-size="30"
+      font-family="Segoe UI"
+      fill="white">
+
+      Umanda Thathsarani
+
+  </text>
+
+  <text
+      x="70"
+      y="205"
+      font-size="22"
+      font-family="Segoe UI"
+      fill="#8be9fd">
+
+      Artificial Intelligence • Machine Learning • Computer Vision
+
+  </text>
+
+  <text
+      x="70"
+      y="240"
+      font-size="18"
+      font-family="Segoe UI"
+      fill="#c9d1d9">
+
+      Building intelligent systems one project at a time.
+
+  </text>
+
+  <!-- Bottom Line -->
+
+  <line
+      x1="70"
+      y1="275"
+      x2="650"
+      y2="275"
+      stroke="url(#title)"
+      stroke-width="4"/>
+
+</svg>
