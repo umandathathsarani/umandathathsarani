@@ -159,13 +159,13 @@ My interests include:
 
 ---
 
-# 🎯 Current Learning
+# 🚀 Mission Control
 
-* 🧠 Large Language Models
-* ☁ Docker
-* 🚀 MLOps
-* 🤗 Hugging Face
-* 🔥 PyTorch
+<div align="center">
+
+<img src="./assets/mission-control.svg" width="100%">
+
+</div>
 
 ---
 

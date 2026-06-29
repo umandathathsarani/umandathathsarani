@@ -1,0 +1,69 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0D1117"/>
+<stop offset="100%" stop-color="#161B22"/>
+</linearGradient>
+
+<linearGradient id="title">
+<stop offset="0%" stop-color="#7B68EE"/>
+<stop offset="100%" stop-color="#00FFFF"/>
+</linearGradient>
+
+</defs>
+
+<rect width="1200" height="420" rx="20" fill="url(#bg)" stroke="#30363D"/>
+
+<text x="40" y="55"
+font-size="34"
+font-family="Segoe UI"
+font-weight="bold"
+fill="url(#title)">
+🚀 AI MISSION CONTROL
+</text>
+
+<line x1="40" y1="75" x2="1160" y2="75" stroke="#30363D"/>
+
+<text x="60" y="125" fill="#00FFFF" font-size="22">🎯 CURRENT MISSION</text>
+
+<text x="80" y="170" fill="white" font-size="18">✔ Build Professional AI Portfolio</text>
+
+<text x="80" y="205" fill="white" font-size="18">✔ Computer Vision Projects</text>
+
+<text x="80" y="240" fill="white" font-size="18">✔ Machine Learning Applications</text>
+
+<text x="80" y="275" fill="white" font-size="18">◐ Learn Docker</text>
+
+<text x="80" y="310" fill="white" font-size="18">◐ Learn PyTorch</text>
+
+<text x="80" y="345" fill="white" font-size="18">○ Contribute to Open Source</text>
+
+<text x="650" y="125" fill="#00FFFF" font-size="22">🧠 LEARNING STATUS</text>
+
+<text x="650" y="170" fill="white">Machine Learning</text>
+<rect x="850" y="156" width="260" height="14" rx="7" fill="#30363D"/>
+<rect x="850" y="156" width="235" height="14" rx="7" fill="#7B68EE"/>
+
+<text x="650" y="205" fill="white">Computer Vision</text>
+<rect x="850" y="191" width="260" height="14" rx="7" fill="#30363D"/>
+<rect x="850" y="191" width="220" height="14" rx="7" fill="#00FFFF"/>
+
+<text x="650" y="240" fill="white">FastAPI</text>
+<rect x="850" y="226" width="260" height="14" rx="7" fill="#30363D"/>
+<rect x="850" y="226" width="190" height="14" rx="7" fill="#7B68EE"/>
+
+<text x="650" y="275" fill="white">Docker</text>
+<rect x="850" y="261" width="260" height="14" rx="7" fill="#30363D"/>
+<rect x="850" y="261" width="90" height="14" rx="7" fill="#00BFFF"/>
+
+<text x="650" y="310" fill="white">LLMs</text>
+<rect x="850" y="296" width="260" height="14" rx="7" fill="#30363D"/>
+<rect x="850" y="296" width="70" height="14" rx="7" fill="#00FFFF"/>
+
+<text x="650" y="345" fill="white">MLOps</text>
+<rect x="850" y="331" width="260" height="14" rx="7" fill="#30363D"/>
+<rect x="850" y="331" width="55" height="14" rx="7" fill="#7B68EE"/>
+
+</svg>
