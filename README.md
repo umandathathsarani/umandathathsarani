@@ -29,8 +29,11 @@
     </td>
     <td align="center" width="25%">
       🔗 <b>Connect</b><br>
-      <a href="https://linkedin.com/in/umandathathsarani">LinkedIn</a> • 
-      <a href="mailto:umandathathsarani@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/binuri-umanda-859bba337">LinkedIn</a> • 
+      <a href="mailto:umathathsarani2003@gmail.com">Email</a><br>
+      <a href="mailto:binuuma3218@gmail.com">Email 2</a> • 
+      <a href="https://wa.me/94742813833">WhatsApp</a> • 
+      <a href="https://www.instagram.com/b.uma.t">Instagram</a>
     </td>
   </tr>
 </table>
