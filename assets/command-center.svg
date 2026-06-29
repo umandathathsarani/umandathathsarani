@@ -1,0 +1,147 @@
+<svg width="1200" height="650" viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#090B10"/>
+<stop offset="100%" stop-color="#161B22"/>
+</linearGradient>
+
+<linearGradient id="cyan">
+<stop offset="0%" stop-color="#7B68EE"/>
+<stop offset="100%" stop-color="#00FFFF"/>
+</linearGradient>
+
+</defs>
+
+<rect
+width="1200"
+height="650"
+rx="20"
+fill="url(#bg)"
+stroke="#30363D"/>
+
+<text
+x="50"
+y="55"
+font-size="34"
+font-family="Segoe UI"
+font-weight="bold"
+fill="url(#cyan)">
+
+🛰 AI COMMAND CENTER
+
+</text>
+
+<line
+x1="50"
+y1="75"
+x2="1150"
+y2="75"
+stroke="#30363D"/>
+
+<!-- Left Panel -->
+
+<rect
+x="50"
+y="110"
+width="320"
+height="480"
+rx="15"
+fill="#0D1117"
+stroke="#30363D"/>
+
+<text
+x="80"
+y="150"
+font-size="22"
+fill="#00FFFF">
+
+SYSTEM STATUS
+
+</text>
+
+<text x="80" y="200" fill="white">🟢 ONLINE</text>
+<text x="80" y="240" fill="white">🤖 AI CORE ACTIVE</text>
+<text x="80" y="280" fill="white">⚡ GPU READY</text>
+<text x="80" y="320" fill="white">☁ CLOUD CONNECTED</text>
+<text x="80" y="360" fill="white">🚀 DEPLOYMENT READY</text>
+
+<!-- Center Panel -->
+
+<rect
+x="420"
+y="110"
+width="350"
+height="480"
+rx="15"
+fill="#0D1117"
+stroke="#30363D"/>
+
+<text
+x="470"
+y="150"
+font-size="22"
+fill="#7B68EE">
+
+ACTIVE PROJECTS
+
+</text>
+
+<text x="460" y="210" fill="white">🌌 Exoplanet Explorer</text>
+<text x="460" y="250" fill="white">🌿 Plant Disease Detection</text>
+<text x="460" y="290" fill="white">🐱 Cat Breed Identifier</text>
+<text x="460" y="330" fill="white">📚 AI Story Engine</text>
+
+<text
+x="460"
+y="410"
+fill="#00FFFF"
+font-size="18">
+
+Mission:
+
+</text>
+
+<text
+x="460"
+y="440"
+fill="white"
+font-size="17">
+
+Create AI solutions that solve
+real-world problems.
+
+</text>
+
+<!-- Right Panel -->
+
+<rect
+x="820"
+y="110"
+width="330"
+height="480"
+rx="15"
+fill="#0D1117"
+stroke="#30363D"/>
+
+<text
+x="850"
+y="150"
+font-size="22"
+fill="#00FFFF">
+
+TECH STACK
+
+</text>
+
+<text x="850" y="200" fill="white">Python</text>
+<text x="850" y="235" fill="white">FastAPI</text>
+<text x="850" y="270" fill="white">Vue</text>
+<text x="850" y="305" fill="white">TensorFlow</text>
+<text x="850" y="340" fill="white">MongoDB</text>
+<text x="850" y="375" fill="white">Docker</text>
+<text x="850" y="410" fill="white">GitHub</text>
+<text x="850" y="445" fill="white">Linux</text>
+
+</svg>
