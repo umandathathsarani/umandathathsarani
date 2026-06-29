@@ -1,60 +1,61 @@
 <svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#161b22"/>
+      <stop offset="0%" stop-color="#14142b"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
     </linearGradient>
     <linearGradient id="card-hover" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#161b22"/>
-      <stop offset="100%" stop-color="#0d1117"/>
+      <stop offset="0%" stop-color="#1e1e40"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
     </linearGradient>
     
     <linearGradient id="badge-bg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d29922"/>
-      <stop offset="100%" stop-color="#e3b341"/>
+      <stop offset="0%" stop-color="#ffb86c"/>
+      <stop offset="100%" stop-color="#ff5e62"/>
     </linearGradient>
 
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
     </filter>
   </defs>
 
   <style>
     .card { transition: all 0.3s ease; transform-origin: center; cursor: pointer; }
-    .card:hover { transform: scale(1.02); filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4)); }
-    .card:hover .card-bg-rect { fill: url(#card-hover); stroke: #d29922; }
+    .card:hover { transform: scale(1.02); filter: drop-shadow(0 10px 15px rgba(255, 184, 108, 0.2)); }
+    .card:hover .card-bg-rect { fill: url(#card-hover); stroke: #ffb86c; }
     
-    .title { font-family: 'Inter', -apple-system, sans-serif; font-size: 18px; font-weight: 600; fill: #c9d1d9; }
-    .desc { font-family: 'Inter', -apple-system, sans-serif; font-size: 12px; fill: #8b949e; }
-    .feature { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; fill: #8b949e; }
-    .badge-text { font-family: 'Inter', -apple-system, sans-serif; font-size: 10px; font-weight: 500; fill: #c9d1d9; }
-    .btn-text { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 600; fill: #0d1117; }
-    .btn-outline-text { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 600; fill: #c9d1d9; }
+    .title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; fill: #FFFFFF; }
+    .desc { font-family: 'Inter', sans-serif; font-size: 12px; fill: #a5b4fc; }
+    .feature { font-family: 'Inter', sans-serif; font-size: 11px; fill: #8be9fd; }
+    .badge-text { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: bold; fill: #FFFFFF; }
+    .btn-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: bold; fill: #14142b; }
+    .btn-outline-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: bold; fill: #FFFFFF; }
   </style>
 
   <g class="card">
-    <rect x="5" y="5" width="390" height="240" rx="8" fill="url(#card-bg)" stroke="#30363d" stroke-width="1" class="card-bg-rect" filter="url(#shadow)"/>
+    <rect x="5" y="5" width="390" height="240" rx="12" fill="url(#card-bg)" stroke="#ffb86c" stroke-width="1.5" class="card-bg-rect" filter="url(#shadow)"/>
     
     <!-- Thumbnail Area -->
-    <rect x="5" y="5" width="390" height="70" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1" style="border-bottom-left-radius:0; border-bottom-right-radius:0; border-bottom:none;"/>
+    <rect x="5" y="5" width="390" height="70" rx="12" fill="rgba(255, 184, 108, 0.15)" style="border-bottom-left-radius:0; border-bottom-right-radius:0;"/>
     
-    <circle cx="50" cy="40" r="14" fill="url(#badge-bg)" filter="url(#glow)"/>
-    <path d="M 40 30 L 46 36 L 38 38 Z" fill="url(#badge-bg)"/>
-    <path d="M 60 30 L 54 36 L 62 38 Z" fill="url(#badge-bg)"/>
+    <!-- Icon representing a cat/pet -->
+    <circle cx="50" cy="40" r="15" fill="url(#badge-bg)" filter="url(#glow)"/>
+    <path d="M 38 28 L 45 35 L 35 38 Z" fill="url(#badge-bg)"/>
+    <path d="M 62 28 L 55 35 L 65 38 Z" fill="url(#badge-bg)"/>
 
     <!-- Badges -->
     <g transform="translate(290, 15)">
-      <rect x="0" y="0" width="90" height="22" rx="11" fill="#21262d" stroke="#30363d" stroke-width="1"/>
-      <circle cx="12" cy="11" r="3" fill="#3fb950"/>
-      <text x="22" y="15" class="badge-text" fill="#c9d1d9">ACTIVE</text>
+      <rect x="0" y="0" width="90" height="20" rx="10" fill="rgba(0, 255, 135, 0.2)" stroke="#00FF87" stroke-width="1"/>
+      <circle cx="10" cy="10" r="3" fill="#00FF87"/>
+      <text x="20" y="14" class="badge-text" fill="#00FF87">ACTIVE</text>
     </g>
 
     <!-- Content -->
@@ -64,27 +65,27 @@
 
     <!-- Tech Stack -->
     <g transform="translate(20, 160)">
-      <rect x="0" y="0" width="70" height="22" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/>
-      <text x="35" y="15" class="badge-text" text-anchor="middle">PyTorch</text>
+      <rect x="0" y="0" width="70" height="20" rx="4" fill="rgba(123, 104, 238, 0.2)"/>
+      <text x="35" y="14" class="badge-text" text-anchor="middle">PyTorch</text>
       
-      <rect x="80" y="0" width="80" height="22" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/>
-      <text x="120" y="15" class="badge-text" text-anchor="middle">MobileNetV2</text>
+      <rect x="80" y="0" width="80" height="20" rx="4" fill="rgba(0, 255, 255, 0.2)"/>
+      <text x="120" y="14" class="badge-text" text-anchor="middle">MobileNetV2</text>
 
-      <rect x="170" y="0" width="60" height="22" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/>
-      <text x="200" y="15" class="badge-text" text-anchor="middle">Flask</text>
+      <rect x="170" y="0" width="60" height="20" rx="4" fill="rgba(255, 184, 108, 0.2)"/>
+      <text x="200" y="14" class="badge-text" text-anchor="middle">Flask</text>
     </g>
 
     <!-- Key Feature -->
-    <circle cx="25" cy="205" r="3" fill="#8b949e"/>
+    <circle cx="25" cy="205" r="3" fill="#8be9fd"/>
     <text x="35" y="209" class="feature">Edge deployment ready</text>
 
     <!-- Buttons -->
     <g transform="translate(220, 200)">
-      <rect x="0" y="0" width="75" height="28" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1"/>
-      <text x="37.5" y="18" class="btn-outline-text" text-anchor="middle">GitHub</text>
+      <rect x="0" y="0" width="75" height="26" rx="4" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.3)"/>
+      <text x="37.5" y="17" class="btn-outline-text" text-anchor="middle">GitHub</text>
 
-      <rect x="85" y="0" width="75" height="28" rx="6" fill="#c9d1d9"/>
-      <text x="122.5" y="18" class="btn-text" text-anchor="middle">Demo ↗</text>
+      <rect x="85" y="0" width="75" height="26" rx="4" fill="url(#badge-bg)"/>
+      <text x="122.5" y="17" class="btn-text" text-anchor="middle">Demo ↗</text>
     </g>
   </g>
 </svg>

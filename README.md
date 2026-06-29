@@ -94,22 +94,18 @@ My career objective is to build highly scalable, intelligent systems that solve 
   <table>
     <tr>
       <td align="center">
-        <a href="https://github.com/umandathathsarani/exoplanet-explorer"><img src="./projects/exoplanet.svg" alt="Exoplanet Detection"></a><br>
-        <b><a href="https://github.com/umandathathsarani/exoplanet-explorer">View GitHub Repo</a></b>
+        <a href="https://github.com/umandathathsarani/exoplanet-explorer"><img src="./projects/exoplanet.svg" alt="Exoplanet Detection"></a>
       </td>
       <td align="center">
-        <a href="https://github.com/umandathathsarani/plant-disease-detection"><img src="./projects/plant.svg" alt="Plant Disease Classifier"></a><br>
-        <b><a href="https://github.com/umandathathsarani/plant-disease-detection">View GitHub Repo</a></b>
+        <a href="https://github.com/umandathathsarani/plant-disease-detection"><img src="./projects/plant.svg" alt="Plant Disease Classifier"></a>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <a href="https://github.com/umandathathsarani/cat-identifier-ai"><img src="./projects/cat.svg" alt="Pet Breed Identifier"></a><br>
-        <b><a href="https://github.com/umandathathsarani/cat-identifier-ai">View GitHub Repo</a></b>
+        <a href="https://github.com/umandathathsarani/cat-identifier-ai"><img src="./projects/cat.svg" alt="Pet Breed Identifier"></a>
       </td>
       <td align="center">
-        <a href="https://github.com/umandathathsarani/interactive-fiction-engine"><img src="./projects/fiction.svg" alt="AI Story Generator"></a><br>
-        <b><a href="https://github.com/umandathathsarani/interactive-fiction-engine">View GitHub Repo</a></b> &nbsp;•&nbsp; <b><a href="https://midnight-clocktower-binuumat.up.railway.app/">Live Demo ↗</a></b>
+        <a href="https://midnight-clocktower-binuumat.up.railway.app/"><img src="./projects/fiction.svg" alt="AI Story Generator"></a>
       </td>
     </tr>
   </table>
