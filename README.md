@@ -18,25 +18,25 @@
 <!-- Recruiter Quick View -->
 <table>
   <tr>
-    <td align="center" width="25%">
+    <td align="center" width="33%">
       🎯 <b>Focus</b><br>Artificial Intelligence & Machine Learning
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="33%">
       🎓 <b>Status</b><br>Undergraduate (BSc IT)<br>Open to Internships
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="33%">
       📍 <b>Location</b><br>Sri Lanka<br>(Remote Ready)
-    </td>
-    <td align="center" width="25%">
-      🔗 <b>Connect</b><br>
-      <a href="https://www.linkedin.com/in/binuri-umanda-859bba337">LinkedIn</a> • 
-      <a href="mailto:umathathsarani2003@gmail.com">Email</a><br>
-      <a href="mailto:binuuma3218@gmail.com">Email 2</a> • 
-      <a href="https://wa.me/94742813833">WhatsApp</a> • 
-      <a href="https://www.instagram.com/b.uma.t">Instagram</a>
     </td>
   </tr>
 </table>
+
+<br>
+
+<a href="https://www.linkedin.com/in/binuri-umanda-859bba337"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:umathathsarani2003@gmail.com"><img src="https://img.shields.io/badge/Email_1-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="mailto:binuuma3218@gmail.com"><img src="https://img.shields.io/badge/Email_2-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email 2"></a>
+<a href="https://wa.me/94742813833"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"></a>
+<a href="https://www.instagram.com/b.uma.t"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
 
 </div>
 
