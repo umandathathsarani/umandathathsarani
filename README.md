@@ -134,9 +134,6 @@ My career objective is to build highly scalable, intelligent systems that solve 
 
 <br><br>
 
-<img src="https://wakatime.com/share/@umandathathsarani/22764811-e369-44a5-a65e-a6132e8b2def.svg" width="100%" alt="WakaTime Languages Stats">
-
-<br><br>
 
 ### 🐍 Contribution Activity
 <img src="https://raw.githubusercontent.com/umandathathsarani/umandathathsarani/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake Animation">
