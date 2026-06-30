@@ -130,7 +130,7 @@ My career objective is to build highly scalable, intelligent systems that solve 
 
 <br><br>
 
-<img src="https://streak-stats.demolab.com?user=umandathathsarani&theme=tokyonight&hide_border=true" width="100%">
+<img src="https://streak-stats.demolab.com?user=umandathathsarani&theme=tokyonight&hide_border=true&v=1" width="100%">
 
 <br><br>
 
