@@ -100,7 +100,7 @@
     <path d="M 1005 100 L 1005 160" stroke="#00FFFF" stroke-width="1.5" class="data-line"/>
 
     <text x="30" y="35" class="title" fill="#7B68EE">CURRENT DIRECTIVE</text>
-    <text x="30" y="70" class="value" fill="#FFFFFF">Mastering Advanced Deep Learning Architectures &amp; Web3 Integrations</text>
+    <text x="30" y="70" class="value" fill="#FFFFFF">Mastering Advanced Deep Learning Architectures &amp; Immersive Web Apps</text>
     
     <g transform="translate(800, 35)">
       <text x="0" y="0" class="subtext">MISSION PROGRESS</text>

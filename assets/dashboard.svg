@@ -190,10 +190,10 @@
       <rect x="0" y="190" height="6" fill="url(#success)" rx="3" class="bar-fill" style="--target-width: 272px;"/>
 
       <!-- Skill 6 -->
-      <text x="0" y="225" class="text-body">Frontend / Vue / React</text>
-      <text x="310" y="225" class="text-mono" text-anchor="end">75%</text>
+      <text x="0" y="225" class="text-body">Frontend / Web Apps</text>
+      <text x="310" y="225" class="text-mono" text-anchor="end">85%</text>
       <rect x="0" y="235" width="310" height="6" fill="#11112b" rx="3"/>
-      <rect x="0" y="235" height="6" fill="url(#warning)" rx="3" class="bar-fill" style="--target-width: 232px;"/>
+      <rect x="0" y="235" height="6" fill="url(#primary)" rx="3" class="bar-fill" style="--target-width: 263px;"/>
       
       <!-- Skill 7 -->
       <text x="0" y="270" class="text-body">Docker / Cloud</text>
