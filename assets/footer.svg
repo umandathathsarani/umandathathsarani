@@ -36,16 +36,35 @@
       0%, 100% { opacity: 0.2; }
       50% { opacity: 1; }
     }
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes sys-fade {
+      0%, 100% { opacity: 0; transform: translateX(-5px); }
+      10%, 80% { opacity: 0.7; transform: translateX(0); }
+      90% { opacity: 0; transform: translateX(-5px); }
+    }
+    @keyframes pulse-line {
+      0%, 100% { opacity: 0.2; filter: none; }
+      50% { opacity: 0.8; filter: drop-shadow(0 0 5px #7B68EE); }
+    }
     
     .core-light { animation: shutdown 10s infinite; }
     .floating { animation: float 4s ease-in-out infinite; transform-origin: center; }
     .star-1 { animation: twinkle 3s infinite; }
     .star-2 { animation: twinkle 4s infinite 1s; }
     .star-3 { animation: twinkle 5s infinite 2s; }
+    .rotating { animation: rotate 20s linear infinite; transform-origin: 0px 0px; }
+    .log-1 { animation: sys-fade 10s infinite both; }
+    .log-2 { animation: sys-fade 10s infinite 1s both; }
+    .log-3 { animation: sys-fade 10s infinite 2s both; }
+    .log-4 { animation: sys-fade 10s infinite 3s both; }
+    .divider { animation: pulse-line 5s ease-in-out infinite; }
     
     .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
     .subtitle { font-family: 'Inter', sans-serif; font-size: 14px; fill: #a5b4fc; }
-    .sys-text { font-family: 'Fira Code', monospace; font-size: 12px; fill: #8be9fd; opacity: 0.7; }
+    .sys-text { font-family: 'Fira Code', monospace; font-size: 12px; fill: #8be9fd; opacity: 0; }
   </style>
 
   <rect width="1200" height="250" fill="url(#bg)"/>
@@ -66,12 +85,12 @@
   </g>
 
   <!-- Divider -->
-  <line x1="100" y1="40" x2="1100" y2="40" stroke="#7B68EE" stroke-width="1" opacity="0.3"/>
+  <line x1="100" y1="40" x2="1100" y2="40" stroke="#7B68EE" stroke-width="1" class="divider"/>
 
   <!-- Central Core / AI Shutdown effect -->
   <g transform="translate(600, 125)">
     <g class="floating">
-      <circle cx="0" cy="0" r="40" fill="none" stroke="#7B68EE" stroke-width="2" stroke-dasharray="10 5" opacity="0.5"/>
+      <circle cx="0" cy="0" r="40" fill="none" stroke="#7B68EE" stroke-width="2" stroke-dasharray="10 5" opacity="0.5" class="rotating"/>
       <circle cx="0" cy="0" r="25" fill="#00FFFF" opacity="0.1" class="core-light"/>
       <circle cx="0" cy="0" r="15" fill="#00FFFF" filter="url(#glow)" class="core-light"/>
       <path d="M -8 -8 L 8 8 M 8 -8 L -8 8" stroke="#11112b" stroke-width="3" class="core-light"/>
@@ -83,10 +102,10 @@
   <text x="600" y="225" class="subtitle" text-anchor="middle">Building intelligent systems for a better future.</text>
 
   <!-- System logs -->
-  <text x="100" y="100" class="sys-text">> Saving session state...</text>
-  <text x="100" y="120" class="sys-text">> Terminating background neural networks...</text>
-  <text x="100" y="140" class="sys-text">> Closing external ports...</text>
-  <text x="100" y="160" class="sys-text" fill="#ffb86c">> AI Core entering sleep mode...</text>
+  <text x="100" y="100" class="sys-text log-1">> Saving session state...</text>
+  <text x="100" y="120" class="sys-text log-2">> Terminating background neural networks...</text>
+  <text x="100" y="140" class="sys-text log-3">> Closing external ports...</text>
+  <text x="100" y="160" class="sys-text log-4" fill="#ffb86c">> AI Core entering sleep mode...</text>
 
   <!-- Social placeholders (Visual only in SVG) -->
   <g transform="translate(950, 100)">
