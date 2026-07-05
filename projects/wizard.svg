@@ -1,0 +1,89 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14142b"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    <linearGradient id="card-hover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e40"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    
+    <linearGradient id="badge-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb86c"/>
+      <stop offset="100%" stop-color="#ff79c6"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <style>
+    .card { transition: all 0.3s ease; transform-origin: center; cursor: pointer; }
+    .card:hover { transform: scale(1.02); filter: drop-shadow(0 10px 15px rgba(255, 184, 108, 0.2)); }
+    .card:hover .card-bg-rect { fill: url(#card-hover); stroke: #ffb86c; }
+    
+    .title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; fill: #FFFFFF; }
+    .desc { font-family: 'Inter', sans-serif; font-size: 12px; fill: #a5b4fc; }
+    .feature { font-family: 'Inter', sans-serif; font-size: 11px; fill: #8be9fd; }
+    .badge-text { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: bold; fill: #FFFFFF; }
+    .btn-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: bold; fill: #14142b; }
+    .btn-outline-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: bold; fill: #FFFFFF; }
+  </style>
+
+  <g class="card">
+    <rect x="5" y="5" width="390" height="240" rx="12" fill="url(#card-bg)" stroke="#bd93f9" stroke-width="1.5" class="card-bg-rect" filter="url(#shadow)"/>
+    
+    <!-- Thumbnail Area -->
+    <rect x="5" y="5" width="390" height="70" rx="12" fill="rgba(255, 184, 108, 0.15)" style="border-bottom-left-radius:0; border-bottom-right-radius:0;"/>
+    
+    <!-- Icon representing a wizard hat / star -->
+    <polygon points="65,20 72,40 92,40 75,52 82,72 65,60 48,72 55,52 38,40 58,40" fill="url(#badge-bg)" filter="url(#glow)"/>
+
+    <!-- Badges -->
+    <g transform="translate(290, 15)">
+      <rect x="0" y="0" width="90" height="20" rx="10" fill="rgba(80, 250, 123, 0.2)" stroke="#50fa7b" stroke-width="1"/>
+      <circle cx="10" cy="10" r="3" fill="#50fa7b"/>
+      <text x="20" y="14" class="badge-text" fill="#50fa7b">LIVE</text>
+    </g>
+
+    <!-- Content -->
+    <text x="20" y="100" class="title">Wizard's Academy</text>
+    <text x="20" y="125" class="desc">A magical web application featuring</text>
+    <text x="20" y="140" class="desc">immersive mini-games and RPG progression.</text>
+
+    <!-- Tech Stack -->
+    <g transform="translate(20, 160)">
+      <rect x="0" y="0" width="70" height="20" rx="4" fill="rgba(227, 79, 38, 0.2)"/>
+      <text x="35" y="14" class="badge-text" text-anchor="middle">HTML/JS</text>
+      
+      <rect x="80" y="0" width="70" height="20" rx="4" fill="rgba(136, 206, 2, 0.2)"/>
+      <text x="115" y="14" class="badge-text" text-anchor="middle">GSAP</text>
+
+      <rect x="160" y="0" width="70" height="20" rx="4" fill="rgba(51, 153, 51, 0.2)"/>
+      <text x="195" y="14" class="badge-text" text-anchor="middle">Node.js</text>
+    </g>
+
+    <!-- Key Feature -->
+    <circle cx="25" cy="205" r="3" fill="#8be9fd"/>
+    <text x="35" y="209" class="feature">Dynamic UI with glassmorphism</text>
+
+    <!-- Buttons -->
+    <g transform="translate(220, 200)">
+      <rect x="0" y="0" width="75" height="26" rx="4" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.3)"/>
+      <text x="37.5" y="17" class="btn-outline-text" text-anchor="middle">GitHub</text>
+
+      <rect x="85" y="0" width="75" height="26" rx="4" fill="url(#badge-bg)"/>
+      <text x="122.5" y="17" class="btn-text" text-anchor="middle">Demo ↗</text>
+    </g>
+  </g>
+</svg>
