@@ -93,7 +93,7 @@
     <!-- Interactive Terminal Lines with Typing Effect -->
     <!-- Line 1 -->
     <g>
-      <clipPath id="c1"><rect width="1000" height="20" class="mask1"/></clipPath>
+      <clipPath id="c1"><rect y="-15" width="1000" height="25" class="mask1"/></clipPath>
       <g transform="translate(30, 145)" clip-path="url(#c1)">
         <text y="0" class="line">
           <tspan class="t-user">umanda@ai-station</tspan>:<tspan class="t-dir">~/portfolio</tspan>$ <tspan class="t-cmd">python3</tspan> <tspan class="t-arg">init_brain.py --deploy</tspan>
@@ -103,7 +103,7 @@
 
     <!-- Line 2 -->
     <g>
-      <clipPath id="c2"><rect width="1000" height="20" class="mask2"/></clipPath>
+      <clipPath id="c2"><rect y="-15" width="1000" height="25" class="mask2"/></clipPath>
       <g transform="translate(30, 165)" clip-path="url(#c2)">
         <text y="0" class="line t-sys">[INFO] Loading pre-trained weights from local storage...</text>
       </g>
@@ -111,7 +111,7 @@
 
     <!-- Line 3 -->
     <g>
-      <clipPath id="c3"><rect width="1000" height="40" class="mask3"/></clipPath>
+      <clipPath id="c3"><rect y="-15" width="1000" height="45" class="mask3"/></clipPath>
       <g transform="translate(30, 185)" clip-path="url(#c3)">
         <text y="0" class="line t-sys">[INFO] Connecting to external database clusters...</text>
         <text y="20" class="line t-success">SYSTEM ONLINE. READY FOR INSTRUCTIONS.</text>
@@ -120,7 +120,7 @@
 
     <!-- Line 4 -->
     <g>
-      <clipPath id="c4"><rect width="1000" height="20" class="mask4"/></clipPath>
+      <clipPath id="c4"><rect y="-15" width="1000" height="25" class="mask4"/></clipPath>
       <g transform="translate(30, 225)" clip-path="url(#c4)">
         <text y="0" class="line">
           <tspan class="t-user">umanda@ai-station</tspan>:<tspan class="t-dir">~/portfolio</tspan>$ <tspan class="t-cmd">whoami</tspan>
@@ -130,7 +130,7 @@
 
     <!-- Line 5 -->
     <g>
-      <clipPath id="c5"><rect width="1000" height="60" class="mask5"/></clipPath>
+      <clipPath id="c5"><rect y="-15" width="1000" height="65" class="mask5"/></clipPath>
       <g transform="translate(30, 245)" clip-path="url(#c5)">
         <text y="0" class="line t-success">> Umanda Thathsarani</text>
         <text y="20" class="line t-success">> Passionate AI Engineer &amp; Full Stack Developer.</text>
