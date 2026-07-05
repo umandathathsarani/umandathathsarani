@@ -100,29 +100,11 @@ My career objective is to build highly scalable, intelligent systems that solve 
 ### 📂 Active Projects
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://github.com/umandathathsarani/exoplanet-explorer"><img src="./projects/exoplanet.svg" alt="Exoplanet Detection"></a>
-      </td>
-      <td align="center">
-        <a href="https://github.com/umandathathsarani/plant-disease-detection"><img src="./projects/plant.svg" alt="Plant Disease Classifier"></a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <a href="https://github.com/umandathathsarani/cat-identifier-ai"><img src="./projects/cat.svg" alt="Pet Breed Identifier"></a>
-      </td>
-      <td align="center">
-        <a href="https://midnight-clocktower-binuumat.up.railway.app/"><img src="./projects/fiction.svg" alt="AI Story Generator"></a>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" colspan="2">
-        <a href="https://play-wizards-academy.up.railway.app/"><img src="./projects/wizard.svg" alt="Wizard's Academy"></a>
-      </td>
-    </tr>
-  </table>
+  <p><i>All my projects, including AI models and full-stack web applications, are showcased on my personal portfolio website!</i></p>
+  <br>
+  <a href="https://umandathathsarani.github.io/">
+    <img src="https://img.shields.io/badge/✨_View_My_Portfolio_Website-11112b?style=for-the-badge&logo=github&logoColor=7B68EE" alt="Portfolio Website">
+  </a>
 </div>
 
 </details>
