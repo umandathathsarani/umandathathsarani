@@ -101,9 +101,18 @@ My career objective is to build highly scalable, intelligent systems that solve 
 
 <div align="center">
   <p><i>All my projects, including AI models and full-stack web applications, are showcased on my personal portfolio website!</i></p>
-  <br>
+  
   <a href="https://umandathathsarani.github.io/">
-    <img src="https://img.shields.io/badge/✨_View_My_Portfolio_Website-11112b?style=for-the-badge&logo=github&logoColor=7B68EE" alt="Portfolio Website">
+    <img src="./assets/portfolio-preview.png" width="90%" alt="Personal Portfolio Website">
+  </a>
+  <br><br>
+  
+  <a href="https://umandathathsarani.github.io/">
+    <img src="https://img.shields.io/badge/✨_Live_Portfolio-7B68EE?style=for-the-badge" alt="Live Portfolio">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/umandathathsarani/umandathathsarani.github.io">
+    <img src="https://img.shields.io/badge/Source_Code-11112b?style=for-the-badge&logo=github&logoColor=white" alt="Source Code">
   </a>
 </div>
 
