@@ -19,7 +19,7 @@
 <table>
   <tr>
     <td align="center" width="33%">
-      🎯 <b>Focus</b><br>AI, ML & Full-Stack Development
+      🎯 <b>Focus</b><br>Artificial Intelligence & Machine Learning
     </td>
     <td align="center" width="33%">
       🎓 <b>Status</b><br>BSc Hons IT (AI) @ SLIIT<br>3rd Year, 1st Semester
