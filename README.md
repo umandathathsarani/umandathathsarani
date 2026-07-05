@@ -119,7 +119,7 @@ My career objective is to build highly scalable, intelligent systems that solve 
     </tr>
     <tr>
       <td align="center" colspan="2">
-        <a href="https://github.com/umandathathsarani/Wizard-s-Academy"><img src="./projects/wizard.svg" alt="Wizard's Academy"></a>
+        <a href="https://play-wizards-academy.up.railway.app/"><img src="./projects/wizard.svg" alt="Wizard's Academy"></a>
       </td>
     </tr>
   </table>

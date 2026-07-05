@@ -79,11 +79,15 @@
 
     <!-- Buttons -->
     <g transform="translate(220, 200)">
-      <rect x="0" y="0" width="75" height="26" rx="4" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.3)"/>
-      <text x="37.5" y="17" class="btn-outline-text" text-anchor="middle">GitHub</text>
+      <a href="https://github.com/umandathathsarani/Wizard-s-Academy" target="_blank">
+        <rect x="0" y="0" width="75" height="26" rx="4" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.3)"/>
+        <text x="37.5" y="17" class="btn-outline-text" text-anchor="middle">GitHub</text>
+      </a>
 
-      <rect x="85" y="0" width="75" height="26" rx="4" fill="url(#badge-bg)"/>
-      <text x="122.5" y="17" class="btn-text" text-anchor="middle">Demo ↗</text>
+      <a href="https://play-wizards-academy.up.railway.app/" target="_blank">
+        <rect x="85" y="0" width="75" height="26" rx="4" fill="url(#badge-bg)"/>
+        <text x="122.5" y="17" class="btn-text" text-anchor="middle">Demo ↗</text>
+      </a>
     </g>
   </g>
 </svg>
