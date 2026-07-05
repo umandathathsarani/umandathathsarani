@@ -19,7 +19,7 @@
 <table>
   <tr>
     <td align="center" width="33%">
-      🎯 <b>Focus</b><br>Artificial Intelligence & Machine Learning
+      🎯 <b>Focus</b><br>AI, ML & Full-Stack Development
     </td>
     <td align="center" width="33%">
       🎓 <b>Status</b><br>BSc Hons IT (AI) @ SLIIT<br>3rd Year, 1st Semester
@@ -52,6 +52,7 @@ My career objective is to build highly scalable, intelligent systems that solve 
 
 - 🤖 Specializing in **Machine Learning, Deep Learning, and Computer Vision**.
 - ⚡ Experienced in building high-performance APIs with **FastAPI and Python**.
+- 🎨 Crafting immersive, interactive full-stack web experiences and SPAs.
 - 🌐 Proficient in bridging the gap between AI and user-facing applications.
 - 🌱 Currently exploring advanced Generative AI and MLOps.
 
