@@ -69,11 +69,13 @@
   <line x1="100" y1="40" x2="1100" y2="40" stroke="#7B68EE" stroke-width="1" opacity="0.3"/>
 
   <!-- Central Core / AI Shutdown effect -->
-  <g transform="translate(600, 125)" class="floating">
-    <circle cx="0" cy="0" r="40" fill="none" stroke="#7B68EE" stroke-width="2" stroke-dasharray="10 5" opacity="0.5"/>
-    <circle cx="0" cy="0" r="25" fill="#00FFFF" opacity="0.1" class="core-light"/>
-    <circle cx="0" cy="0" r="15" fill="#00FFFF" filter="url(#glow)" class="core-light"/>
-    <path d="M -8 -8 L 8 8 M 8 -8 L -8 8" stroke="#11112b" stroke-width="3" class="core-light"/>
+  <g transform="translate(600, 125)">
+    <g class="floating">
+      <circle cx="0" cy="0" r="40" fill="none" stroke="#7B68EE" stroke-width="2" stroke-dasharray="10 5" opacity="0.5"/>
+      <circle cx="0" cy="0" r="25" fill="#00FFFF" opacity="0.1" class="core-light"/>
+      <circle cx="0" cy="0" r="15" fill="#00FFFF" filter="url(#glow)" class="core-light"/>
+      <path d="M -8 -8 L 8 8 M 8 -8 L -8 8" stroke="#11112b" stroke-width="3" class="core-light"/>
+    </g>
   </g>
 
   <!-- Text -->
